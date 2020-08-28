@@ -21,7 +21,7 @@ title                    : "developing me and contributing world"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dongjoon Kim"
-description              : "Project Stack."
+description              : "who am I"
 url                      : "https://korfriend.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "D. Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Being Ambitious but Modest!"
   location         : "Seoul, South Korea"
   email            : "korfriend@gmail.com"
   links:
