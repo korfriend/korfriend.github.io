@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Deep Imaging and Graphics Lab (DIG LAB ^^)"
+title                    : "Deep Imaging and Graphics Lab"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dongjoon Kim"
@@ -94,29 +94,20 @@ analytics:
 
 # Site Author
 author:
-  name             : "D. Kim"
+  name             : #"D. Kim"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Being Modest but Ambitious!"
+  bio              : "Professional Programmer for Computer Graphics, Computer Vision, and Image Processing. Our current focus is on how to integrate our field into AI technology and immersive mixed reality."
   location         : "Seoul, South Korea"
   email            : "korfriend@gmail.com"
   links:
-    - label: "Email"
+    - label: "Contact me"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:korfriend@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/korfriend"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+    #- label: "Instagram"
+    #  icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
