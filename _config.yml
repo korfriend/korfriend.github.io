@@ -23,7 +23,7 @@ name                     : "Dongjoon Kim"
 description              : "Introduction to what DIG Lab's interest"
 url                      : "https://korfriend.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "https://korfriend.github.io" # the subpath of your site, e.g. "/blog"
-repository               : "korfriend/korfriend.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/wordcloud.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "DIG Lab" # overrides the website title displayed in the masthead, use " " for no title
