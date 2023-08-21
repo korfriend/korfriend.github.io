@@ -1,0 +1,17 @@
+# Authors
+team_members:
+- name        : "Juwon Kim (BS, 2023.2)"
+  bio         : 
+  avatar      : 
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:afegg555@naver.com"
+
+- name        : "Jonghoon Kim (BS, 2023.2)"
+  bio         : 
+  avatar      : 
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:whdgns4195@gmail.com"

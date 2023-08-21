@@ -1,0 +1,174 @@
+# Authors
+team_members:
+- name        : "Dongjoon Kim (Professor)"
+  bio         : "I am the chief of DIG lab and currently serve as an assistant professor, 
+  mentoring my lab students to become skillful team members. Now, let me introduce my team members."
+  avatar      : "/assets/images/dojo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:korfriend@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://sites.google.com/view/dongjoonkim/home/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: 
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/korfriend/"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+
+# in bio, 1-3 sentence(s, not too long) describing you, your research interest, and what you are involved in
+- name        : "Eunyoung Choi (MS candidate)"
+  bio         : "1-3 sentence(s, not too long) describing you, your research interest, and what you are involved in"
+  avatar      : "/assets/images/people/Eunyeong.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:rkwmal0000@naver.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/nokcharathae"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+      
+- name        : "Taemin Jung (BS candidate)"
+  bio         : "Hello, I'm Taemin, a developer who loves basketball. I highly value steadiness and have a keen interest in Computer Vision. I've been involved in projects like Distortion-free SVM generation (with Avicus) and Spin Navi."
+  avatar      : "/assets/images/people/taemin.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto: okchrisok@naver.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/taemin-steve"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+
+- name        : "Donguk Kim (BS candidate)"
+  bio         : "Interest in 3d vision and graphics, for more information check my personal website below"
+  avatar      : "/assets/images/people/donguk.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:dragon071@kw.ac.kr"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://donguk071.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/donguk071"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+      
+- name        : "Sihun Jin (BS candidate)"
+  bio         : "Studying in GAN and GAN inversion. I enjoy participating in the ai competition."
+  avatar      : "/assets/images/people/Sihun.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:hunsi0213@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      url:  "https://github.com/hunsii"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+    - label: "blog"
+      icon: "fab fa-fw fa-blogger"
+      url: 
+
+- name        : "Haneul Kim (BS candidate)"
+  bio         : "..."
+  avatar      : "/assets/images/people/haneul.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:haneul.kim.dev@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://haneulkimdev.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/haneulkimdev"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:

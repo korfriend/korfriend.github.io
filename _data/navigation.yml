@@ -1,12 +1,30 @@
 # main links
 main:
-  #- title: "Quick-Start Guide"
-  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-   - title: "Projects"
-     url: /year-archive/
-   - title: "Papers"
-     url: /collection-archive/
+  - title: "People"
+    url: /docs/people/
+  - title: "Projects"
+    url: /docs/project/
+  - title: "Academic Activities"
+    url: /docs/academic/
+  - title: "Course Works"
+    url: /docs/course/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+  
+sidebar-sample:
+  - title: "Computer Graphics"
+  - title: "Computer Vision"
+  - title: "AI-based Image Processing"
+  - title: "Deep Generative Model"
+  - title: "Sensor Imaging and Tracking"
+  - title: "Immersive Mixed Reality"
+  - title: "Interactive Visualization"
+  - title: "Photorealistic Rendering"
+  #  children:
+  #    - title: "Child Page A2"
+  #      url: /
+  #    - title: "Child Page A3"
+  #      url: /
+  #    - title: "Child Page A4"
+  #      url: /
