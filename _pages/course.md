@@ -4,6 +4,7 @@ layout: single
 permalink: /docs/course/
 excerpt: "Introduction to our course works."
 toc: true
+toc_sticky: true
 share: false
 hidden: true
 author_profile: false

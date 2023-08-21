@@ -4,6 +4,7 @@ layout: single
 permalink: /docs/academic/
 excerpt: "Introduction to our academic activities."
 toc: true
+toc_sticky: true
 share: false
 hidden: true
 author_profile: false
