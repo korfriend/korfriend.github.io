@@ -116,7 +116,7 @@ team_members:
       url:
       
 - name        : "Sihun Jin (BS candidate)"
-  bio         : "Studying in GAN and GAN inversion. I enjoy participating in the ai competition."
+  bio         : "Hello, I'm Sihun. My primary focus lies in the GANs and GAN inversion. Through GANs, I've explored image manipulation projects like human image generation with user sketch. I am participating in kaggle and dacon competitions and learning more about deep learning."
   avatar      : "/assets/images/people/Sihun.jpg"
   links:
     - label: "Email"
@@ -145,7 +145,7 @@ team_members:
       url: 
 
 - name        : "Haneul Kim (BS candidate)"
-  bio         : "..."
+  bio         : "I am an undergraduate researcher at DIG lab, with a keen interest in Computer Graphics and Computer Vision. My primary involvement is in the Boat Docking Simulation project, developed using Unreal Engine 5, aimed at advancing Surround View Monitor systems."
   avatar      : "/assets/images/people/haneul.jpg"
   links:
     - label: "Email"
@@ -163,6 +163,35 @@ team_members:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/haneulkimdev"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+      
+- name        : "Minkyo Kim (BS candidate)"
+  bio         : "..."
+  avatar      : "/assets/images/people/minkyo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:haneul.kim.dev@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: ""
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: 
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url:
