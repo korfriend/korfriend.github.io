@@ -12,11 +12,11 @@ classes: wide
 entries_layout: grid
 
 sidebar:
-  - title: "Our Research Field"
-    image: "/assets/images/VT.jpg"
+  - title: "Our Research Works"
+    image: "/assets/images/teasor_1.jpg"
     image_alt: "image"
-    #text: "- Computer Graphics"
-    nav: sidebar-sample
+    text: "We have professional expertise in Computer Graphics, Computer Vision, and Image Processing. All paper works are based on the commercially-qualified projects and executable source codes. If you want to collaborate our research, do not hasitate to contact us :)"
+    #nav: sidebar-sample
 
 #output: html_document
 #<style type="text/css">
