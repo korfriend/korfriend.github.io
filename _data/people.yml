@@ -35,7 +35,7 @@ team_members:
 
 # in bio, 1-3 sentence(s, not too long) describing you, your research interest, and what you are involved in
 - name        : "Eunyoung Choi (MS candidate)"
-  bio         : "1-3 sentence(s, not too long) describing you, your research interest, and what you are involved in"
+  bio         : "My areas of interest include virtual humans, 3D reconstruction, and medical XR. Currently, I'm working on NeRF-related research and medical XR projects."
   avatar      : "/assets/images/people/Eunyeong.jpg"
   links:
     - label: "Email"
@@ -87,7 +87,7 @@ team_members:
       url:
 
 - name        : "Donguk Kim (BS candidate)"
-  bio         : "Interest in 3d vision and graphics, for more information check my personal website below"
+  bio         : "Hello, I'm Dongwook. I'm an undergraduate intern at the DIG lab. My primary area of interest lies in 3D computer vision. I've been involved in a project creating SVM, and recently, I've been diving into the realm of few-shot NeRF research. If you have any questions for our lab or me, please feel free to reach out via email."
   avatar      : "/assets/images/people/donguk.jpg"
   links:
     - label: "Email"
@@ -174,7 +174,7 @@ team_members:
       url:
       
 - name        : "Minkyo Kim (BS candidate)"
-  bio         : "..."
+  bio         : "Hello, I'm a developer who likes games.I am interested in computer graphics. I am also very interested in Unreal Engine and Unity Engine. I involved in Spin Navi."
   avatar      : "/assets/images/people/minkyo.jpg"
   links:
     - label: "Email"
