@@ -14,10 +14,14 @@ header:
   overlay_image: /assets/images/wordcloud8.png
   actions:
     - label: "<i class='fas fa-thumbs-up'></i> Join us"
-      url: "/docs/quick-start-guide/"
+      url: "mailto:korfriend@gmail.com"
       
 # bundle exec jekyll serve
 # https://mmistakes.github.io/minimal-mistakes/about/ 
 ---
 {% assign home = site.pages | where: 'name','home.md' %}
 {{home}}
+
+<script>
+
+</script>

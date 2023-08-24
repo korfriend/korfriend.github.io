@@ -4,11 +4,11 @@ title: "Auto- Vehicle Asistantance Imaging"
 date: 2022-07-01 -0000
 categories:
   - Projects
-tags:
-  - Avikus
-  - Unreal Engine 5
-  - Computer Vision
-  - Graphics Simulation
+#tags:
+#  - Avikus
+#  - Unreal Engine 5
+#  - Computer Vision
+#  - Graphics Simulation
 header:
   teaser: "/assets/images/svm_teasor.jpg"
   image: "/assets/images/svm1.jpg"
