@@ -119,7 +119,7 @@ team_members:
       url:
       
 - name        : "Sihun Jin (BS candidate)"
-  bio         : "Hello, I'm Sihun. I am focusing on the GAN and inverse GAN models. Based on the StyleGAN2 and its framework, I am exploring [<U>how to interactively manipulate human's hair style using with a simple sketch</U>](https://korfriend.github.io/projects/(Project)_GenerativeModel/). I love to participating in Kaggle and Dacon competitions and learning more about advanced AI models."
+  bio         : "Hello, I'm Sihun. I am focusing on the GAN and inverse GAN models. Based on the StyleGAN2 and its framework, I am exploring [<U>how to interactively manipulate human hair style using a simple sketch</U>](https://korfriend.github.io/projects/(Project)_GenerativeModel/). I love to participating in Kaggle and Dacon competitions and learning more about advanced AI models."
   avatar      : "/assets/images/people/Sihun.jpg"
   links:
     - label: "Email"
