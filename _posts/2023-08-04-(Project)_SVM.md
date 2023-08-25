@@ -29,12 +29,12 @@ These issues become even more critical in marine environments where the ground i
 
 Due to the marine environment, data acquisition is limited and verification of the proposed algorithm is difficult. To resolve this, we have implemented **ship docking simulation through Unreal Engine 5 and developed a virtual sensor plugin**. Through the virtual sensor data captured in the simulation, we have been developing **a module that combines geometry-correction-based homography technology and various AI technologies of segmentation, inpainting, and super resolution**.
 
-<figure>
-	<img src="/assets/images/svm3.jpg">
-  <figcaption>simulation features.</figcaption>
-</figure>
 <figure class="half">
 	<img src="/assets/images/svm2.jpg">
 	<img src="/assets/images/svm4.jpg">
-	<figcaption>svm with inpainting, and our proposed method (suppressing the ghost artifact).</figcaption>
+	<figcaption>SVM with inpainting, and our proposed method (suppressing the ghost artifact).</figcaption>
 </figure>
+
+{% include video id="1nOennz61whM59Irmfz7n-s2sASWFo1au" provider="google-drive" caption="UE-based simulation and SVM system"%}
+<br>
+{% include video id="1nOoUoPOVkLPSojvK4Ws2vEh0qUD3eUtX" provider="google-drive" caption="Ship navigation with undersea-terrain sensor visualization"%}

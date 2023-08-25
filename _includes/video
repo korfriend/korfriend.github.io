@@ -22,3 +22,7 @@
     <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 {% endunless %}
+
+{% if include.caption %}
+<figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+{% endif %}
