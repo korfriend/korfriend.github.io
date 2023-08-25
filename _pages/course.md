@@ -54,6 +54,6 @@ sidebar:
 ### Deep Generative Model (G)
 ![](/assets/images/class_dgm1.gif){: width="50%" height="50%"}{: .center}
 ![](/assets/images/class_dgm2.gif){: width="50%" height="50%"}{: .center}
-<br> In this course, we introduce the VAE (Variational Auto-Encodind) and GAN (Generative Adversarial Network) models, which are classic yet fundamental for understanding generative models, along with their mathematical rationale. We delve into the learning model of StyleGAN2 and various style transfer techniques achieved through feature embedding and parametric encoding, which can be explained by the inverse GAN. We also present the potential of new generative models, representing novel view synthesis through the NeRF model.
+<br> In this course, we introduce the VAE (Variational Auto-Encoder) and GAN (Generative Adversarial Network) models, which are classic yet fundamental for understanding generative models, along with their mathematical rationale. We delve into the learning model of StyleGAN2 and various style transfer techniques achieved through feature embedding and parametric encoding, which can be explained by the inverse GAN. We also present the potential of new generative models, representing novel view synthesis through the NeRF model.
 <br>
 >programming: **python, colmap, pytorch, tensorflow**
