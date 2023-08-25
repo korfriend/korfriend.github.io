@@ -67,6 +67,9 @@ team_members:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto: okchrisok@naver.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://velog.io/@taemin-steve/series"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url:
