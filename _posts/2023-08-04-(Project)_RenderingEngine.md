@@ -22,3 +22,10 @@ In particular, the [NeRF](https://github.com/bmild/nerf) plugin module will be u
 	<img src="/assets/images/rendering_and_vis1.jpg">
   <figcaption>basic features of our rendering engine.</figcaption>
 </figure>
+
+{% capture programming %}
+#### programming experience
+C++, DirectX, Cuda, Pytorch, Tensorflow, Python, Javascript
+{% endcapture %}
+
+<div class="notice">{{ programming | markdownify }}</div>

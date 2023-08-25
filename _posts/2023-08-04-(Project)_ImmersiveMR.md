@@ -25,5 +25,11 @@ To this end, we are leveraging artificial intelligence technology for user inter
 
 Based on the understanding of the above technologies, our laboratory has been conducting projects for **immersive exposure therapy content with [Seoul National University Dental Hospital, Prof. HyunJeong Kim](https://dentbio.snu.ac.kr/research/lab/dal/)**, and **immersive diagnostic examinations content with [HALLYM UNIV. MEDICAL CENTER](https://research.hallym.or.kr/hallym_hit/hallymuniv_sub.asp?screen=ptm140)**.
 
-{% include video id="dopb_-vy9n8" provider="youtube" %}
+{% include video id="dopb_-vy9n8" provider="youtube" caption="Exposure therapy for crowd phobia, subway situation"%}
 
+{% capture programming %}
+#### programming experience
+C++, C#, Direct3D, CUDA, Python
+{% endcapture %}
+
+<div class="notice">{{ programming | markdownify }}</div>

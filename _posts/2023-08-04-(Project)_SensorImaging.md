@@ -27,4 +27,9 @@ We possess extensive expertise in the installation and application of diverse se
 	<figcaption>3D imaging (reverse engineering), 3D modeling, AR system, and inspection visualization.</figcaption>
 </figure>
 
->programming experience: C++, C#, Direct3D, CUDA, Python
+{% capture programming %}
+#### programming experience
+C++, C#, Direct3D, CUDA, Python
+{% endcapture %}
+
+<div class="notice">{{ programming | markdownify }}</div>

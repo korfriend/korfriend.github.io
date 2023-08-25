@@ -30,3 +30,10 @@ Recently, we have been working on a project to **build a navigation system for s
 	<img src="/assets/images/ar_navi3.jpg">
   <figcaption>AR navigation for surgery.</figcaption>
 </figure>
+
+{% capture programming %}
+#### programming experience
+C++, Python, Pytorch, Tensorflow
+{% endcapture %}
+
+<div class="notice">{{ programming | markdownify }}</div>

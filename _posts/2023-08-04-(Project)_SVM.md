@@ -38,3 +38,10 @@ Due to the marine environment, data acquisition is limited and verification of t
 {% include video id="1nOennz61whM59Irmfz7n-s2sASWFo1au" provider="google-drive" caption="UE-based simulation and SVM system"%}
 <br>
 {% include video id="1nOoUoPOVkLPSojvK4Ws2vEh0qUD3eUtX" provider="google-drive" caption="Ship navigation with undersea-terrain sensor visualization"%}
+
+{% capture programming %}
+#### programming experience
+Unreal Engine plugin developement, Unreal Engine Blueprint/C++, Python, Tensorflow, Pytorch
+{% endcapture %}
+
+<div class="notice">{{ programming | markdownify }}</div>
