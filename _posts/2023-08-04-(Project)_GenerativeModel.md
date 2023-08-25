@@ -19,7 +19,7 @@ We are also conducting research on the improvements of [NeRF](https://github.com
 
 {% capture programming %}
 #### programming experience
-Python, Pytorch, Python
+Python, Pytorch, Tensorflow
 {% endcapture %}
 
 <div class="notice">{{ programming | markdownify }}</div>
