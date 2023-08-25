@@ -61,7 +61,7 @@ team_members:
       url:
       
 - name        : "Taemin Jung (BS candidate)"
-  bio         : "Hello, I'm Taemin, a developer who loves basketball and values steadiness. I am strongly interested in Computer Vision tasks. I am exploring brand-new AI models, applying them to the lab projects. Recently, I am highly contributing to two projects: [<U>distortion-corrected SVM</U>](https://korfriend.github.io/projects/(Project)_SVM/) and [<U>AR navigation for spine surgery</U>](https://korfriend.github.io/projects/(Project)_SpineNaviAR/)."
+  bio         : "Hello, I'm Taemin, a passionate developer who deeply loves basketball, and a person with a strong consistency and diligence. I am strongly interested in Computer Vision tasks. I am exploring brand-new AI models, applying them to the lab projects. Recently, I am highly contributing to two projects: [<U>distortion-corrected SVM</U>](https://korfriend.github.io/projects/(Project)_SVM/) and [<U>AR navigation for spine surgery</U>](https://korfriend.github.io/projects/(Project)_SpineNaviAR/)."
   avatar      : "/assets/images/people/taemin.jpg"
   links:
     - label: "Email"

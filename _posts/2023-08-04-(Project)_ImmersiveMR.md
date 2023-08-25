@@ -29,7 +29,7 @@ Based on the understanding of the above technologies, our laboratory has been co
 
 {% capture programming %}
 #### programming experience
-C++, C#, Direct3D, CUDA, Python
+Unreal Engine C++/Blueprint, Python
 {% endcapture %}
 
 <div class="notice">{{ programming | markdownify }}</div>
