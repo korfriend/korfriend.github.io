@@ -17,6 +17,13 @@ We are currently working on a research project to create new hairstyles using th
 
 We are also conducting research on the improvements of [NeRF](https://github.com/bmild/nerf), a neural network-based scene representation model, specifically for **few-shot cases and dynamic scene cases**. The researching features will be added to the NeRF plugin module of the rendering engine that our laboratory has been developing.
 
+<figure class="third">
+	<img src="/assets/images/class_dgm1.gif">
+	<img src="/assets/images/nerf1.gif">
+  <img src="/assets/images/nerf2.gif">
+	<figcaption>Scene representation by NeRF. (images from NVIDIA)</figcaption>
+</figure>
+
 {% capture programming %}
 #### programming experience
 Python, Pytorch, Tensorflow

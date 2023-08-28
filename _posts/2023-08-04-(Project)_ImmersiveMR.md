@@ -27,6 +27,11 @@ Based on the understanding of the above technologies, our laboratory has been co
 
 {% include video id="dopb_-vy9n8" provider="youtube" caption="Exposure therapy for crowd phobia, subway situation"%}
 
+<figure>
+	<img src="/assets/images/imm_mr2.jpg">
+  <figcaption>HMD AR spine surgery collaborating with Seoul National Univ. Bundang Hospital</figcaption>
+</figure>
+
 {% capture programming %}
 #### programming experience
 Unreal Engine C++/Blueprint, Python
