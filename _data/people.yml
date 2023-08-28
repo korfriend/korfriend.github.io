@@ -148,7 +148,7 @@ team_members:
       url: 
 
 - name        : "Haneul Kim (BS candidate)"
-  bio         : "I am a member of DIG lab, highly interested in Computer Graphics and Computer Vision. I am highly contributing to the [<U>boat docking SVM project</U>](https://korfriend.github.io/projects/(Project)_SVM/), mainly deveopling UE5/python plugins used in our SVM simulation, and also applying specific AI modules to our SVM system."
+  bio         : "I am a member of DIG lab, highly interested in Computer Graphics and Computer Vision. I am highly contributing to the [<U>boat docking SVM project</U>](https://korfriend.github.io/projects/(Project)_SVM/), mainly developing UE5/python plugins used in our SVM simulation, and also applying specific AI modules to our SVM system."
   avatar      : "/assets/images/people/haneul.jpg"
   links:
     - label: "Email"
