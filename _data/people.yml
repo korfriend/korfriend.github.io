@@ -182,10 +182,10 @@ team_members:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:haneul.kim.dev@gmail.com"
+      url: "mailto:mangonie@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: ""
+      url: 
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url:
