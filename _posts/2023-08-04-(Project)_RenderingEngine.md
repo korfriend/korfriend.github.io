@@ -3,10 +3,10 @@ title: "Rendering and Visualization"
 date: 2021-02-01 -0000
 categories:
   - Projects
-tags:
-  - Scientific and Medical Visualization
-  - Photorealistic Rendering
-  - Volume Rendering
+#tags:
+#  - Scientific and Medical Visualization
+#  - Photorealistic Rendering
+#  - Volume Rendering
 header:
   teaser: "/assets/images/rendering_and_vis_teasor.jpg"
   image: "/assets/images/rendering_and_vis_plan.jpg"

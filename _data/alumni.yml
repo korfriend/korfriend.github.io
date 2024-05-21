@@ -17,3 +17,147 @@ team_members:
       url: "mailto:whdgns4195@gmail.com"
 
 
+- name        : "Taemin Jung (BS candidate)"
+  bio         : "Hello, I'm Taemin, a passionate developer who deeply loves basketball, and a person with a strong consistency and diligence. I am strongly interested in Computer Vision tasks. I am exploring brand-new AI models, applying them to the lab projects. Recently, I am highly contributing to two projects: [<U>distortion-corrected SVM</U>](https://korfriend.github.io/projects/(Project)_SVM/) and [<U>AR navigation for spine surgery</U>](https://korfriend.github.io/projects/(Project)_SpineNaviAR/)."
+  avatar      : "/assets/images/people/taemin.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto: okchrisok@naver.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://velog.io/@taemin-steve/series"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/taemin-steve"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+
+- name        : "Donguk Kim (BS candidate)"
+  bio         : "Hello, I'm Dongwook. My major interest lies in the field of 3D Computer Vision. I am involved in the [<U>SVM developement project</U>](https://korfriend.github.io/projects/(Project)_SVM/), contributing to the ship-docking simulation using UE5. Recently, I am deeply diving into the [<U>few-shot NeRF research</U>](https://korfriend.github.io/projects/(Project)_GenerativeModel/). If you have any questions for our lab or me, please feel free to contact me through email."
+  avatar      : "/assets/images/people/donguk.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:dragon071@kw.ac.kr"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://donguk071.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/donguk071"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+      
+- name        : "Sihun Jin (BS candidate)"
+  bio         : "Hello, I'm Sihun. I am focusing on the GAN and inverse GAN models. Based on the StyleGAN2 and its framework, I am exploring [<U>how to interactively manipulate human hair style using a simple sketch</U>](https://korfriend.github.io/projects/(Project)_GenerativeModel/). I love to participating in Kaggle and Dacon competitions and learning more about advanced AI models."
+  avatar      : "/assets/images/people/Sihun.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:hunsi0213@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-github"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      url:  "https://github.com/hunsii"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+    - label: "blog"
+      icon: "fab fa-fw fa-blogger"
+      url: 
+
+- name        : "Haneul Kim (BS candidate)"
+  bio         : "I am a member of DIG lab, highly interested in Computer Graphics and Computer Vision. I am highly contributing to the [<U>boat docking SVM project</U>](https://korfriend.github.io/projects/(Project)_SVM/), mainly developing UE5/python plugins used in our SVM simulation, and also applying specific AI modules to our SVM system."
+  avatar      : "/assets/images/people/haneul.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:haneul.kim.dev@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://haneulkimdev.github.io/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/haneulkimdev"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+      
+- name        : "Minkyo Kim (BS candidate)"
+  bio         : "Hello, I'm a graphics programmer who loves PC games. I love to apply my computer graphics fundamentals to the high level graphics tools like Unreal Engine and Unity, creating fancy 3D content. As I am also interested in Augmented Reality, I am involved in the [<U>AR-based navigation project</U>](https://korfriend.github.io/projects/(Project)_SpineNaviAR/), learning the fundamentals of AR technology."
+  avatar      : "/assets/images/people/minkyo.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mangonie@naver.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: 
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: 
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:

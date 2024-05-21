@@ -3,10 +3,10 @@ title: "AR Navigation System"
 date: 2023-04-01 -0000
 categories:
   - Projects
-tags:
-  - Native C++
-  - Tracking
-  - Calibration
+#tags:
+#  - Native C++
+#  - Tracking
+#  - Calibration
 header:
   teaser: "/assets/images/ar_navi_teasor.jpg"
   image: "/assets/images/ar_navi1.jpg"

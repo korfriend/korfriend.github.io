@@ -3,11 +3,11 @@ title: "Immersive Mixed Reality"
 date: 2022-07-01 -0000
 categories:
   - Projects
-tags:
-  - Unreal Engine 5
-  - Immersive Mixed Reality
-  - NeRF
-  - AI agent
+#tags:
+#  - Unreal Engine 5
+#  - Immersive Mixed Reality
+#  - NeRF
+#  - AI agent
 header:
   teaser: "/assets/images/imm_mr_teasor.jpg"
   image: "/assets/images/imm_mr1.jpg"

@@ -3,11 +3,11 @@ title: "Deep Generative Model"
 date: 2021-06-01 -0000
 categories:
   - Projects
-tags:
-  - Generative Model
-  - AI
-  - StyleGAN
-  - NeRF
+#tags:
+#  - Generative Model
+#  - AI
+#  - StyleGAN
+#  - NeRF
 
 header:
   teaser: "/assets/images/deep_gm_teasor.jpg"

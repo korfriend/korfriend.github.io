@@ -3,13 +3,13 @@ title: "Sensor Imaging"
 date: 2020-03-01 -0000
 categories:
   - Projects
-tags:
-  - X-ray Imaging
-  - CT Reconstruction
-  - Volume Data
-  - Optics Imaging
-  - Shape-from-Focus
-  - Depth Map
+#tags:
+#  - X-ray Imaging
+#  - CT Reconstruction
+#  - Volume Data
+#  - Optics Imaging
+#  - Shape-from-Focus
+#  - Depth Map
 header:
   teaser: "/assets/images/sensor_imaging_teasor.jpg"
   image: "/assets/images/sensor_imaging1.jpg"
