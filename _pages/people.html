@@ -21,6 +21,16 @@ author_profile: true
     .people_li {
         float: left;
     }
+    .authors-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* 옵션: center, space-between 등으로 변경 가능 */
+        align-items: center;
+    }
+    .author__name {
+        margin: 5px; /* 각 이름 주변에 약간의 여백을 추가 */
+        white-space: nowrap; /* 이름이 줄바꿈되지 않도록 함 */
+    }
 </style>
 
 <!--<h6 class="author__name p-name" itemprop="name" style="font-size:0.9em; ">-->
@@ -293,7 +303,7 @@ author_profile: true
 
 <h2> Alumni </h2>
 
-<div itemscope itemtype="https://schema.org/Person" class="h-card" style="display: flex; align-items: flex-start;">
+<div itemscope itemtype="https://schema.org/Person" class="authors-container" style="display: flex; align-items: flex-start;">
     {% for author in alumni %}
         <!--{% if author.links %}-->
         {% assign link = author.links[0] %}
