@@ -61,15 +61,15 @@ team_members:
       url:
       
 - name        : "Jihun Song (BS candidate)"
-  bio         : "... : [<U>distortion-corrected SVM</U>](https://korfriend.github.io/projects/(Project)_SVM/) and [<U>AR navigation for spine surgery</U>](https://korfriend.github.io/projects/(Project)_SpineNaviAR/)."
-  avatar      : "/assets/images/people/taemin.jpg"
+  bio         : "Hello, I'm interested in computer graphics and computer vision, specifically in NeRF (Neural Radiance Fields) and 3D Gaussian Splatting, which are fields of 3D reconstruction and neural rendering. Additionally, I have a keen interest in physics-based simulation."
+  avatar      : "/assets/images/people/jihunsong.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto: okchrisok@naver.com"
+      url: "mailto: songjihun1080@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://velog.io/@taemin-steve/series"
+      url: "https://www.linkedin.com/in/jihun-song-kw/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url:
@@ -78,7 +78,7 @@ team_members:
       url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/taemin-steve"
+      url: " https://github.com/steezera"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url:
