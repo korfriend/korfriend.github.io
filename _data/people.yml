@@ -32,33 +32,6 @@ team_members:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url:
-
-# in bio, 1-3 sentence(s, not too long) describing you, your research interest, and what you are involved in
-- name        : "Eunyoung Choi (MS candidate)"
-  bio         : "My research interests are virtual humans, neural scene reconstruction, and how to combine them into immersive XR environments. Recently, I'm focusing on the [<U>dynamic NeRF research</U>](https://korfriend.github.io/projects/(Project)_GenerativeModel/) and involved in [<U>immersive medical solution project</U>](https://korfriend.github.io/projects/(Project)_ImmersiveMR/)."
-  avatar      : "/assets/images/people/Eunyeong.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:rkwmal0000@naver.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/nokcharathae"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url:
       
 - name        : "Jihun Song (BS candidate)"
   bio         : "Hello, I'm interested in computer graphics and computer vision, specifically in NeRF (Neural Radiance Fields) and 3D Gaussian Splatting, which are fields of 3D reconstruction and neural rendering. Additionally, I have a keen interest in physics-based simulation."
@@ -79,6 +52,35 @@ team_members:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: " https://github.com/steezera"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url:
+
+- name        : "Sohyun Jang (BS candidate)"
+  bio         : "Hello, I’m interested in computer graphics and AI, particularly in Stable Diffusion models and their use in visual content creation."
+  avatar      : "/assets/images/people/sohyun.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: 
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: 
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: 
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url:
