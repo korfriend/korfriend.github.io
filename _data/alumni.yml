@@ -163,7 +163,7 @@ team_members:
       url:
 
 # in bio, 1-3 sentence(s, not too long) describing you, your research interest, and what you are involved in
-- name        : "Eunyoung Choi (MS candidate)"
+- name        : "Eunyoung Choi (MS)"
   bio         : "My research interests are virtual humans, neural scene reconstruction, and how to combine them into immersive XR environments. Recently, I'm focusing on the [<U>dynamic NeRF research</U>](https://korfriend.github.io/projects/(Project)_GenerativeModel/) and involved in [<U>immersive medical solution project</U>](https://korfriend.github.io/projects/(Project)_ImmersiveMR/)."
   avatar      : "/assets/images/people/Eunyeong.jpg"
   links:
