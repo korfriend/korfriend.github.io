@@ -62,13 +62,13 @@ team_members:
       icon: "fab fa-fw fa-instagram"
       url:
 
-- name        : "Sohyun Jang (BS candidate)"
+- name        : "Seohyeon Jang (BS candidate)"
   bio         : "Hello, I’m interested in computer graphics and AI, particularly in Stable Diffusion models and their use in visual content creation."
   avatar      : "/assets/images/people/sohyun.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: 
+      url: "22jsh3721@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: 
@@ -80,7 +80,7 @@ team_members:
       url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: 
+      url: "https://github.com/jshhhhhh"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       url:
@@ -89,5 +89,5 @@ team_members:
       url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url:
+      url: 
 
