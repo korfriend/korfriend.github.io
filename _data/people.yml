@@ -33,35 +33,6 @@ team_members:
       icon: "fab fa-fw fa-instagram"
       url:
       
-- name        : "Jihun Song (BS candidate)"
-  bio         : "Hello, I'm interested in computer graphics and computer vision, specifically in NeRF (Neural Radiance Fields) and 3D Gaussian Splatting, which are fields of 3D reconstruction and neural rendering. Additionally, I have a keen interest in physics-based simulation."
-  avatar      : "/assets/images/people/jihunsong.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto: songjihun1080@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.linkedin.com/in/jihun-song-kw/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: " https://github.com/steezera"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url:
-
 - name        : "Sohyun Jang (BS candidate)"
   bio         : "Hello, I’m interested in computer graphics and AI, particularly in Stable Diffusion models and their use in visual content creation."
   avatar      : "/assets/images/people/sohyun.jpg"
