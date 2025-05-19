@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Dr. Dongjoon Kim"
   avatar           : "/assets/images/dojo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Assistant Professor at Kwangwoon University. Ph.D. & M.S. Computer Science Engineering 
+  bio              : "Associate Professor at Kwangwoon University. Ph.D. & M.S. Computer Science Engineering 
   at Seoul National University. B.S. Electrical Engineering at Seoul National University. 
-  <br>... I prefer introducing myself as a <b>Professional Imaging Programmer</b>."
+  <br>... I prefer introducing myself as a <b>Professional Imaging SW Engineer</b>."
   location         : "Kwangwoon University"
   email            : "korfriend@gmail.com"
   links:
