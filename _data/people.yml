@@ -62,3 +62,31 @@ team_members:
       icon: "fab fa-fw fa-instagram"
       url: 
 
+- name        : "Insung Hwang (BS candidate)"
+  bio         : "I’m passionate about computer graphics and its use in creating visual experiences across games, interactive content, and cinematic media."
+  avatar      : "/assets/images/people/insungH.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "justheare0502@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: 
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/insung52"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: 
