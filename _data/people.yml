@@ -1,8 +1,7 @@
 # Authors
 team_members:
 - name        : "Dongjoon Kim (Professor)"
-  bio         : "I am the chief of DIG lab and currently serve as an assistant professor, 
-  mentoring my lab students to become skillful team members. Now, let me introduce my team members."
+  bio         : "As an Associate Professor and the head of the DIG Lab, I am dedicated to mentoring students to become skilled researchers and collaborators. Allow me to introduce our team."
   avatar      : "/assets/images/dojo.jpg"
   links:
     - label: "Email"
@@ -33,7 +32,7 @@ team_members:
       icon: "fab fa-fw fa-instagram"
       url:
       
-- name        : "Sohyun Jang (BS candidate)"
+- name        : "Sohyun Jang (Undergraduate Researcher)"
   bio         : "Hello, I’m interested in computer graphics and AI, particularly in Stable Diffusion models and their use in visual content creation."
   avatar      : "/assets/images/people/sohyun.jpg"
   links:
@@ -62,7 +61,7 @@ team_members:
       icon: "fab fa-fw fa-instagram"
       url: 
 
-- name        : "Insung Hwang (BS candidate)"
+- name        : "Insung Hwang (Undergraduate Researcher)"
   bio         : "I’m passionate about computer graphics and its use in creating visual experiences across games, interactive content, and cinematic media."
   avatar      : "/assets/images/people/insungH.jpg"
   links:
