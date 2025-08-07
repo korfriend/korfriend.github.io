@@ -11,11 +11,13 @@ categories:
 
 header:
   teaser: "/assets/images/deep_gm_teasor.jpg"
-  image: "/assets/images/deep_gm1.jpg"
+  image: "/assets/images/hairtransfer.jpg"
 ---
-We are currently working on a research project to create new hairstyles using the trained generator of [StyleGAN2](https://github.com/NVlabs/stylegan2). In this research, we are using feature embedding (of various reference images) techniques optimized for a natural style transfer. Specifically, we are trying to find the method for **seamless blending between the naturally generated style image and the original image**. We are also developing an **efficient hairstyle creation solution through various parametric encoding models for interactive style controls using a simple sketche operation**.
+1. Controllable Image Generation with Lightweight Diffusion Models
+Building on our past success in creating and manipulating novel hairstyles with [StyleGAN2](https://github.com/NVlabs/stylegan2), our research has now advanced to the next generation of generative models. We are currently focused on **developing lightweight, diffusion-based models for controllable image generation**. Our primary goal is to create highly efficient frameworks that enable intuitive, real-time image manipulation through simple user inputs, such as sketches or text prompts, while maintaining high-fidelity results. This research aims to make advanced content creation more accessible and interactive.
 
-We are also conducting research on the improvements of [NeRF](https://github.com/bmild/nerf), a neural network-based scene representation model, specifically for **few-shot cases and dynamic scene cases**. The researching features will be added to the NeRF plugin module of the rendering engine that our laboratory has been developing. The entire pipeline is motivated by [Taichi-nerf](https://github.com/taichi-dev/taichi-nerfs), based on the core technique, [intant NGP](https://github.com/NVlabs/instant-ngp), which allows for fast/interactive NeRF.
+2. Real-time 3D Scene Reconstruction with Gaussian Splatting
+In the realm of 3D scene representation, our focus has evolved towards the cutting-edge technique of 3D Gaussian Splatting. We are actively researching methods to achieve real-time, high-fidelity generation of large-scale indoor maps. Our work concentrates on optimizing the capture-to-render pipeline, enabling instant reconstruction and interactive exploration of complex environments. This technology is being developed for seamless integration into robotics, augmented reality (AR), and digital twin applications.
 
 <figure class="third">
 	<img src="/assets/images/class_dgm1.gif">

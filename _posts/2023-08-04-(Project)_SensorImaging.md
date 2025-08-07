@@ -14,10 +14,24 @@ header:
   teaser: "/assets/images/sensor_imaging_teasor.jpg"
   image: "/assets/images/sensor_imaging1.jpg"
 ---
-We possess extensive expertise in the installation and application of diverse sensor devices for industrial vision solutions, as well as in conducting various experimental studies. 
-1. Quality Control: Using high-resolution cameras and sensors, we can detect defects that might be invisible or hard to detect by the human eye. This is particularly useful in industrial manufacturing, textiles, and food processing. We have experience in **analyzing various imaging data obtained from optical camera system to the x-ray system, creating successful commercial SW solutions**.
-2. 3D Imaging: 3D vision systems can provide data on an object’s height, volume, or profile. This is crucial in checking volume of filled products and ensuring the correct fit of industrial parts. We have experience in **reconstructing CT volume data from x-ray scan images, generating depth map from vari-focal images or multi-view images, and configuring their explicit mesh models**.
-3. Argumented Reality: Based on our experiences for diverse sensor controls, we can overlay 3D virtual models aligned along the human-vision images, enhancing the intuitive understanding of human operations. We have experience in **conducting a large-scale government-supported AR project, where we have successfully developed an efficient AR tracking and calibration system to integrate data scanned from various devices into a single image**.
+Our Expertise in Industrial Vision Solutions
+
+We specialize in the end-to-end implementation of advanced industrial vision solutions, from sensor installation and application to rigorous experimental validation. Our core capabilities include:
+
+1. Automated Quality Control
+We leverage high-resolution cameras and sensor arrays to detect microscopic defects and anomalies that are imperceptible to the human eye. This capability is critical for enhancing quality and yield in sectors like industrial manufacturing, textiles, and food processing.
+
+Proven Experience: We have successfully developed commercial software solutions by analyzing a wide spectrum of imaging data, ranging from optical camera systems to industrial X-ray scanners.
+
+2. High-Precision 3D Imaging & Analysis
+Our 3D vision systems provide precise data on an object’s geometry, including height, volume, and surface profile. This is essential for applications such as verifying the fill volume of products or ensuring the precise fit of mechanical components.
+
+Proven Experience: We are proficient in reconstructing 3D CT volumes from X-ray scans, generating accurate depth maps from multi-view or vari-focal images, and constructing explicit mesh models for analysis and simulation.
+
+3. Augmented Reality (AR) for Industrial Applications
+Leveraging our deep expertise in multi-sensor control, we develop AR solutions that overlay 3D virtual models onto a user's real-world view. This provides intuitive, real-time guidance for complex assembly, maintenance, and operational tasks.
+
+Proven Experience: We successfully led a large-scale, government-funded AR project, delivering a high-performance tracking and calibration system. This system efficiently integrates and visualizes data from multiple sensors into a single, unified augmented view.
 
 <figure class="half">
 	<img src="/assets/images/sensor_imaging_f1.jpg">
