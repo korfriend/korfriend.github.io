@@ -89,3 +89,32 @@ team_members:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: 
+
+- name        : "Hyuntaek Seo (Undergraduate Researcher)"
+  bio         : "I am interested in exploring generative models to create and restore images, focusing on improving visual data."
+  avatar      : "/assets/images/people/Hyuntaek.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "skht0158@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: 
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/agliotomato"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: 
