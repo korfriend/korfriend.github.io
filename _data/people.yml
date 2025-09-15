@@ -92,7 +92,7 @@ team_members:
 
 - name        : "Hyuntaek Seo (Undergraduate Researcher)"
   bio         : "I am interested in exploring generative models to create and restore images, focusing on improving visual data."
-  avatar      : "/assets/images/people/Hyuntaek.jpg"
+  avatar      : "/assets/images/people/hyuntaek.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
