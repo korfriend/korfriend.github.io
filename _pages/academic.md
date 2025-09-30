@@ -29,7 +29,7 @@ sidebar:
 (* corresponding author)
 </span>
 #### International Journal
-- <span style="font-size:0.8em;">Eunyeong Choi, Sihun Jin, and *Dongjoon Kim, "VividHairEdit: Disentangled Latent Control for High-Fidelity Hairstyle Transfer via StyleGAN2 Inversion", (ACCEPTED), Computer Graphics Forum, 2025</span>
+- <span style="font-size:0.8em;">Eunyeong Choi, Sihun Jin, and *Dongjoon Kim, "VividHairEdit: Disentangled Latent Control for High-Fidelity Hairstyle Transfer via StyleGAN2 Inversion", Computer Graphics Forum (CGF), 2025</span>
 - <span style="font-size:0.8em;">Jinghui Jiang, *Dongjoon Kim, Bohyoung Kim, and Yeong-Gil Shin, "GA-VAE: Enhancing Local Feature Representation in VQ-VAE Through Genetic Algorithm-Based Token Optimization", IEEE ACCESS, 2025</span>
 - <span style="font-size:0.8em;">Dongjoon Kim and *Heewon Kye, "Z-Thickness Blending: Effective Fragment Merging for Multifragment Rendering", Pacific Conference on Computer Graphics and Applications (PG), Journal Track, One of the BK(BrainKorea)-certified International Conferences,  BK-approved IF 2, 2021 [[slide]](https://drive.google.com/file/d/1Fd_qtBYRghifQCvVR1e4lP1LphjlXFhz/view?usp=sharing) [[pdf]](https://drive.google.com/file/d/1cxea3paNA_4lPPDTTBR0Rk9aX3MBzH9H/view?usp=sharing)</span>
 - <span style="font-size:0.8em;">Jin Hur,  *Dongjoon Kim, Yeong-Gil Shin, and *Ho Lee, "Metal Artifact Reduction Method based on a Constrained Beam-Hardening Estimator for Polychromatic X-ray CT", Physics in Medicine and Biology, 2021</span>
