@@ -34,6 +34,11 @@ team_members:
       
 - name        : "Sohyun Jang (Undergraduate Researcher)"
   bio         : "Hello, I’m interested in computer graphics and AI, particularly in Stable Diffusion models and their use in visual content creation."
+  keywords    :
+    - label: "Computer Graphics"
+      url: "https://en.wikipedia.org/wiki/Computer_graphics"
+    - label: "Generative AI"
+      url: "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"
   avatar      : "/assets/images/people/sohyun.jpg"
   links:
     - label: "Email"
