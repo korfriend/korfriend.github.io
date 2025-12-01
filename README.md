@@ -58,3 +58,26 @@ To edit content (like Team Members) locally using the Admin UI:
 - `_data/team.yml`: Contains data for team members (names, bios, keywords, links).
 - `_pages/people.html`: The template for the People page.
 - `admin/`: Contains configuration for Decap CMS.
+
+## Security & Authentication
+
+- **Local Mode**: When running locally with `npx decap-server`, **no password is required**. The system assumes that if you have access to the local terminal and file system, you are authorized to make changes.
+- **Production (GitHub Pages)**: When deployed, you **MUST** configure authentication (e.g., via Netlify Identity or GitHub OAuth). Strangers cannot access the admin panel without logging in.
+
+### Setting up Live Admin (Netlify Identity)
+
+To make the Admin panel work on the live site (`https://korfriend.github.io/admin/`), you need a backend to handle logins. The easiest free way is **Netlify**:
+
+1.  **Sign up for Netlify** (free) and log in.
+2.  **"Add new site"** -> **"Import an existing project"**.
+3.  Connect to **GitHub** and select your `korfriend.github.io` repository.
+4.  **Deploy the site**. (Netlify will mirror your GitHub Pages).
+5.  Go to **Site Settings** -> **Identity** -> **Enable Identity**.
+6.  Under **Registration preferences**, you can set it to "Invite only" (secure) or "Open".
+7.  Go to **Site Settings** -> **Identity** -> **Services** -> **Git Gateway** -> **Enable Git Gateway**.
+8.  Now, when you visit your site's Admin panel, you can log in with the email/password you set up in Netlify Identity.
+
+### How it Works (Architecture)
+
+- **Data Storage**: Your data is **NOT** stored in a database. It is stored directly in your **GitHub Repository** (e.g., inside `_data/team.yml`). When you save in the Admin panel, Decap CMS makes a **Git Commit** to your repository behind the scenes.
+- **Login Management**: **Netlify Identity** handles the user accounts (email/password). It verifies who you are and then gives the Admin panel permission to write to your GitHub repository (via Git Gateway).
