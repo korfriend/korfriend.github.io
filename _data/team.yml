@@ -1,0 +1,135 @@
+team_members:
+  - name: Dongjoon Kim (Professor)
+    bio: As an Associate Professor and the head of the DIG Lab, I am dedicated to
+      mentoring students to become skilled researchers and collaborators. Allow
+      me to introduce our team.
+    avatar: /assets/images/dojo.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: mailto:korfriend@gmail.com
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: https://sites.google.com/view/dongjoonkim/home/
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: https://github.com/korfriend/
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Sohyun Jang (Undergraduate Researcher)
+    bio: Hello, I’m interested in computer graphics and AI, particularly in Stable
+      Diffusion models and their use in visual content creation.
+    keywords:
+      - label: multi-condition & consistency diffusion model
+        url: https://github.com/llljshlll/dental-image-generation/blob/main/multi_condition.md
+      - label: dental imaging
+        url: https://github.com/llljshlll/dental-image-generation/blob/main/multi_condition.md
+    avatar: /assets/images/people/sohyun.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: 22jsh3721@gmail.com
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: https://github.com/jshhhhhh
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Insung Hwang (Undergraduate Researcher)
+    bio: I’m passionate about computer graphics and its use in creating visual
+      experiences across games, interactive content, and cinematic media.
+    avatar: /assets/images/people/insungH.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: justheare0502@gmail.com
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: https://github.com/insung52
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+    keywords:
+      - label: Realtime Rendering Engine
+        url: https://github.com/insung52/Wicked-engine-Deep-Dive
+      - label: MCP-based Agentic Graphics
+  - name: Hyuntaek Seo (Undergraduate Researcher)
+    bio: I am interested in exploring generative models to create and restore
+      images, focusing on improving visual data.
+    avatar: /assets/images/people/hyuntaek.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: skht0158@gmail.com
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: https://github.com/agliotomato
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+    keywords:
+      - label: GAN-inversion
+        url: https://github.com/agliotomato/VividHair
+      - label: Style-controllable Diffusion Model
+        url: https://github.com/agliotomato/Hairline-Instructed-Diffusion

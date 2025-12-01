@@ -2,34 +2,39 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+local_backend: true
+
 media_folder: "assets/images/uploads" # Media files will be stored in the repo under assets/images/uploads
 public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /assets/images/uploads
 
 collections:
   - name: "people" # Used in routes, e.g., /admin/collections/blog
     label: "People" # Used in the UI
-    file: "_data/people.yml"
-    description: "Manage team members"
-    fields:
-      - label: "Team Members"
-        name: "team_members"
-        widget: "list"
+    files:
+      - name: "team"
+        label: "Team Members"
+        file: "_data/team.yml"
+        description: "Manage team members"
         fields:
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Bio", name: "bio", widget: "text"}
-          - {label: "Avatar", name: "avatar", widget: "image", required: false}
-          - label: "Keywords"
-            name: "keywords"
+          - label: "Team Members"
+            name: "team_members"
             widget: "list"
-            required: false
             fields:
-              - {label: "Label", name: "label", widget: "string"}
-              - {label: "URL", name: "url", widget: "string"}
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            required: false
-            fields:
-              - {label: "Label", name: "label", widget: "string"}
-              - {label: "Icon", name: "icon", widget: "string", default: "fas fa-fw fa-link"}
-              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Bio", name: "bio", widget: "text"}
+              - {label: "Avatar", name: "avatar", widget: "image", required: false}
+              - label: "Keywords"
+                name: "keywords"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string", required: false}
+                  - {label: "URL", name: "url", widget: "string", required: false}
+              - label: "Links"
+                name: "links"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string", required: false}
+                  - {label: "Icon", name: "icon", widget: "string", default: "fas fa-fw fa-link", required: false}
+                  - {label: "URL", name: "url", widget: "string", required: false}
