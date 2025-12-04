@@ -97,7 +97,7 @@ team_members:
         url: null
     keywords:
       - label: Realtime Rendering Engine
-        url: https://github.com/insung52/Wicked-engine-Deep-Dive
+        url: https://github.com/insung52/research-history/blob/master/researchhistory.md
       - label: MCP-based Agentic Graphics
   - name: Hyuntaek Seo (Undergraduate Researcher)
     bio: I am interested in exploring generative models to create and restore
