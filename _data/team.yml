@@ -133,3 +133,173 @@ team_members:
         url: https://github.com/agliotomato/VividHair
       - label: Style-controllable Diffusion Model
         url: https://github.com/agliotomato/Hairline-Instructed-Diffusion
+  - name: Dongwook Kang (Graduate Researcher)
+    bio: I am interested in large-scale multi-agent reinforcement learning, working
+      with the Genesis physics engine for tank combat simulation and sim2real
+      transfer.
+    keywords:
+      - label: Multi-Agent Reinforcement Learning
+      - label: Genesis Physics Simulation
+      - label: Tank Combat Simulation
+    avatar: /assets/images/people/dongwook.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: null
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: null
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Mankyo Jung (Graduate Researcher)
+    bio: I focus on terrain-aware inverse dynamics calibration between Blender and
+      Genesis simulators, exploring 3D terrain generalization for sim-to-sim
+      transfer.
+    keywords:
+      - label: Sim2Sim Calibration
+      - label: Inverse Dynamics Mapping
+      - label: 3D Terrain Processing
+    avatar: /assets/images/people/mankyo.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: null
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: null
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Jaewon Heo (Graduate Researcher)
+    bio: I am researching residual reinforcement learning approaches for
+      path-following control, with an emphasis on covariate shift mitigation
+      and sim2real transfer.
+    keywords:
+      - label: Residual Reinforcement Learning
+      - label: Behavior Cloning
+      - label: Path-Following Control
+    avatar: /assets/images/people/jaewon.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: null
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: null
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Jinsoo Mo (Graduate Researcher)
+    bio: I am interested in medium-aware 3D Gaussian Splatting reformulations for
+      active digital twins, focusing on forward rendering optimizations and
+      fragment-level gradient accumulation in overlapped gaussian scenarios.
+    keywords:
+      - label: 3D Gaussian Splatting
+      - label: Medium Reformulation
+      - label: Fragment Blending
+    avatar: /assets/images/people/jinsoo.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: null
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: null
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Kyowon Lee (Graduate Researcher)
+    bio: I work on rig-constrained on-the-fly 3D Gaussian Splatting for real-time
+      novel view synthesis with multi-camera systems, specializing in
+      rotation-only rig optimization and incremental pose estimation.
+    keywords:
+      - label: On-the-fly Novel View Synthesis
+      - label: Rig-constrained 3DGS
+      - label: Real-time Pose Estimation
+    avatar: /assets/images/people/kyowon.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: null
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: null
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
