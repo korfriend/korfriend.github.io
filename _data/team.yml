@@ -37,12 +37,12 @@ team_members:
       focusing on multi-view texture optimization and dental imaging
       applications using the Mitsuba3 renderer.
     keywords:
-      - label: multi-view texture optimization
-        url: https://github.com/llljshlll/dental-image-generation/blob/main/multi_condition.md
-      - label: geometry-aware relighting
-        url: https://github.com/llljshlll/dental-image-generation/blob/main/multi_condition.md
-      - label: 3D texture synthesis
-        url: https://github.com/llljshlll/dental-image-generation/blob/main/multi_condition.md
+      - label: Dental Inverse Graphics
+        url: /Projects/dental-inverse-graphics/
+      - label: DiT × Gaussian Splatting
+        url: /Projects/dental-inverse-graphics/
+      - label: Multi-view Texture Optimization
+        url: /Projects/dental-inverse-graphics/
     avatar: /assets/images/people/sohyun.jpg
     links:
       - label: Email
@@ -74,9 +74,12 @@ team_members:
       active digital twins, focusing on forward rendering optimizations and
       fragment-level gradient accumulation in overlapped gaussian scenarios.
     keywords:
-      - label: 3D Gaussian Splatting
+      - label: 3D Gaussian Splatting (Medium Model)
+        url: /Projects/gaussian-splatting/
       - label: Medium Reformulation
-      - label: Fragment Blending
+        url: /Projects/gaussian-splatting/
+      - label: Fragment-level Gradient
+        url: /Projects/gaussian-splatting/
     avatar: /assets/images/people/jinsoo.jpg
     links:
       - label: Email
@@ -135,11 +138,12 @@ team_members:
         icon: fab fa-fw fa-instagram
         url: null
     keywords:
-      - label: VXGI & Real-time Global Illumination
-        url: https://github.com/insung52/Wicked-engine-Deep-Dive/blob/main/voxelGI/voxelGI.md
-      - label: DirectX12 Engine Optimization
-        url: https://github.com/insung52/Wicked-engine-Deep-Dive
-      - label: GPU Memory & Sync Architecture
+      - label: Modern In-house Graphics Engine
+        url: /Projects/graphics-engine/
+      - label: VXGI & Real-time GI
+        url: /Projects/graphics-engine/
+      - label: DirectX 12 Pipeline
+        url: /Projects/graphics-engine/
   - name: Hyuntaek Seo (Undergraduate Researcher)
     bio: I work on controllable hair editing using sketch-guided diffusion models,
       focusing on context-robust generation and matte-gated ControlNet
@@ -171,20 +175,23 @@ team_members:
         icon: fab fa-fw fa-instagram
         url: null
     keywords:
-      - label: sketch-guided hair inpainting
-        url: https://github.com/agliotomato/VividHair
-      - label: matte-gated ControlNet
-        url: https://github.com/agliotomato/Hairline-Instructed-Diffusion
-      - label: context-robust DiT generation
-        url: https://github.com/agliotomato/VividHair
+      - label: DiT-based Hair Editing
+        url: /Projects/hair-style-dit/
+      - label: Sketch-guided Inpainting
+        url: /Projects/hair-style-dit/
+      - label: Matte-gated ControlNet
+        url: /Projects/hair-style-dit/
   - name: Dongwook Kang (Undergraduate Researcher)
     bio: I am interested in large-scale multi-agent reinforcement learning, working
       with the Genesis physics engine for tank combat simulation and sim2real
       transfer.
     keywords:
-      - label: Multi-Agent Reinforcement Learning
+      - label: ST2ST Mapper
+        url: /Projects/real2sim-sim2real/
+      - label: Multi-Agent Combat RL
+        url: /Projects/real2sim-sim2real/
       - label: Genesis Physics Simulation
-      - label: Tank Combat Simulation
+        url: /Projects/real2sim-sim2real/
     avatar: /assets/images/people/dongwook.jpg
     links:
       - label: Email
@@ -216,9 +223,12 @@ team_members:
       Genesis simulators, exploring 3D terrain generalization for sim-to-sim
       transfer.
     keywords:
-      - label: Sim2Sim Calibration
-      - label: Inverse Dynamics Mapping
-      - label: 3D Terrain Processing
+      - label: Trajectory-to-State Mapping
+        url: /Projects/real2sim-sim2real/
+      - label: Inverse Dynamics Calibration
+        url: /Projects/real2sim-sim2real/
+      - label: 3D Terrain Generalization
+        url: /Projects/real2sim-sim2real/
     avatar: /assets/images/people/mankyo.jpg
     links:
       - label: Email
@@ -250,9 +260,12 @@ team_members:
       path-following control, with an emphasis on covariate shift mitigation
       and sim2real transfer.
     keywords:
-      - label: Residual Reinforcement Learning
-      - label: Behavior Cloning
-      - label: Path-Following Control
+      - label: Residual RL (BC + RL)
+        url: /Projects/real2sim-sim2real/
+      - label: Path-Following STB Recovery
+        url: /Projects/real2sim-sim2real/
+      - label: Covariate Shift Mitigation
+        url: /Projects/real2sim-sim2real/
     avatar: /assets/images/people/jaewon.jpg
     links:
       - label: Email
@@ -284,9 +297,12 @@ team_members:
       novel view synthesis with multi-camera systems, specializing in
       rotation-only rig optimization and incremental pose estimation.
     keywords:
+      - label: High-speed 3D Gaussian Splatting
+        url: /Projects/gaussian-splatting/
       - label: On-the-fly Novel View Synthesis
-      - label: Rig-constrained 3DGS
-      - label: Real-time Pose Estimation
+        url: /Projects/gaussian-splatting/
+      - label: Rig-constrained Reconstruction
+        url: /Projects/gaussian-splatting/
     avatar: /assets/images/people/kyowon.jpg
     links:
       - label: Email
