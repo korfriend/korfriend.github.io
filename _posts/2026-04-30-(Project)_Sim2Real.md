@@ -32,13 +32,6 @@ Recent directions include:
    simulators where calibration alone is insufficient (terrain, contact,
    suspension dynamics).
 
-**Researchers**:
-- [Dongwook Kang]({{ '/docs/people/' | relative_url }}) — ST2ST mapping and
-  multi-agent RL combat simulation.
-- [Jaewon Heo]({{ '/docs/people/' | relative_url }}) and
-  [Mankyo Jung]({{ '/docs/people/' | relative_url }}) — trajectory-to-state
-  mapping and RL-based path-following STB recovery.
-
 <figure class="half">
 	<img src="/assets/images/projects/p3_genesis_sim.png">
 	<img src="/assets/images/projects/p3_tank_rotate.png">

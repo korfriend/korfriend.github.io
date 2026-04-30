@@ -27,10 +27,6 @@ Recent directions include:
    scene capture and material-based shadow compositing — useful for VR/AR and
    digital-twin overlays.
 
-**Researcher**: [Insung Hwang]({{ '/docs/people/' | relative_url }}) — owns the
-modern in-house engine roadmap, from low-level GPU pipeline work to advanced
-GI implementations.
-
 <figure class="half">
 	<img src="/assets/images/projects/p1_vxgi_reflection.png">
 	<img src="/assets/images/projects/p1_vxgi_debug.png">

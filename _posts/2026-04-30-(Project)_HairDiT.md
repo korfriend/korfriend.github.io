@@ -26,9 +26,6 @@ Recent directions include:
    conditioning strategies that yield robust generations across diverse
    inputs.
 
-**Researcher**: [Hyuntaek Seo]({{ '/docs/people/' | relative_url }}) — leads
-the DiT-based hair editing program, from architecture design to evaluation.
-
 <figure>
 	<img src="/assets/images/hairtransfer.jpg">
   <figcaption>Hair editing — bridging earlier GAN-inversion work with our DiT-based pipeline.</figcaption>

@@ -27,12 +27,6 @@ Recent directions include:
    per-camera to per-rig, enabling real-time incremental reconstruction
    with strong robustness over classic SfM pipelines.
 
-**Researchers**:
-- [Jinsoo Mo]({{ '/docs/people/' | relative_url }}) — *medium-model* line:
-  reformulating 3DGS as participating media with fragment-level blending.
-- [Kyowon Lee]({{ '/docs/people/' | relative_url }}) — *high-speed* line:
-  rig-constrained on-the-fly 3DGS for real-time novel-view synthesis.
-
 <figure class="half">
 	<img src="/assets/images/projects/p5_alignment.png">
 	<img src="/assets/images/projects/p5_run_summary.png">

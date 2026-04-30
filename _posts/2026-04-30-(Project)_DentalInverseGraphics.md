@@ -27,10 +27,6 @@ Recent directions include:
    3DGS scene representations for joint geometry-appearance recovery in
    the dental setting.
 
-**Researcher**: [Sohyun Jang]({{ '/docs/people/' | relative_url }}) — leads
-the dental inverse-graphics line, integrating generative diffusion priors
-with neural and physically-based renderers.
-
 <figure>
 	<img src="/assets/images/projects/p2_hair_dit.png">
   <figcaption>Diffusion-transformer-driven generation (sample from the lab's DiT pipeline).</figcaption>
