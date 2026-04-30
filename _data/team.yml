@@ -32,41 +32,7 @@ team_members:
       - label: Instagram
         icon: fab fa-fw fa-instagram
         url: null
-  - name: Jinsoo Mo (Master's Student)
-    bio: I am interested in medium-aware 3D Gaussian Splatting reformulations for
-      active digital twins, focusing on forward rendering optimizations and
-      fragment-level gradient accumulation in overlapped gaussian scenarios.
-    keywords:
-      - label: 3D Gaussian Splatting
-      - label: Medium Reformulation
-      - label: Fragment Blending
-    avatar: /assets/images/people/jinsoo.jpg
-    links:
-      - label: Email
-        icon: fas fa-fw fa-envelope-square
-        url: null
-      - label: Website
-        icon: fas fa-fw fa-link
-        url: null
-      - label: Twitter
-        icon: fab fa-fw fa-twitter-square
-        url: null
-      - label: Facebook
-        icon: fab fa-fw fa-facebook-square
-        url: null
-      - label: GitHub
-        icon: fab fa-fw fa-github
-        url: null
-      - label: GitLab
-        icon: fab fa-fw fa-gitlab
-        url: null
-      - label: Bitbucket
-        icon: fab fa-fw fa-bitbucket
-        url: null
-      - label: Instagram
-        icon: fab fa-fw fa-instagram
-        url: null
-  - name: Sohyun Jang (Undergraduate Researcher)
+  - name: Sohyun Jang (Master's Student)
     bio: I work on consistent 3D texture generation with geometry-aware relighting,
       focusing on multi-view texture optimization and dental imaging
       applications using the Mitsuba3 renderer.
@@ -94,6 +60,40 @@ team_members:
       - label: GitHub
         icon: fab fa-fw fa-github
         url: https://github.com/jshhhhhh
+      - label: GitLab
+        icon: fab fa-fw fa-gitlab
+        url: null
+      - label: Bitbucket
+        icon: fab fa-fw fa-bitbucket
+        url: null
+      - label: Instagram
+        icon: fab fa-fw fa-instagram
+        url: null
+  - name: Jinsoo Mo (Master's Student)
+    bio: I am interested in medium-aware 3D Gaussian Splatting reformulations for
+      active digital twins, focusing on forward rendering optimizations and
+      fragment-level gradient accumulation in overlapped gaussian scenarios.
+    keywords:
+      - label: 3D Gaussian Splatting
+      - label: Medium Reformulation
+      - label: Fragment Blending
+    avatar: /assets/images/people/jinsoo.jpg
+    links:
+      - label: Email
+        icon: fas fa-fw fa-envelope-square
+        url: null
+      - label: Website
+        icon: fas fa-fw fa-link
+        url: null
+      - label: Twitter
+        icon: fab fa-fw fa-twitter-square
+        url: null
+      - label: Facebook
+        icon: fab fa-fw fa-facebook-square
+        url: null
+      - label: GitHub
+        icon: fab fa-fw fa-github
+        url: null
       - label: GitLab
         icon: fab fa-fw fa-gitlab
         url: null
