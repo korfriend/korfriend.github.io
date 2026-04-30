@@ -3,44 +3,83 @@ layout: splash
 permalink: /
 hidden: true
 
-#excerpt:
-#  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-#  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.24.0">Latest release v4.24.0</#a></small>
-#header:
-#  overlay_color: "#5e616c"
-#  overlay_image: /assets/images/mm-home-page-feature.jpg
-#  actions:
-#    - label: "<i class='fas fa-download'></i> Install now"
-#      url: "/docs/quick-start-guide/"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/projects/p5_run_summary.png
+  actions:
+    - label: "<i class='fas fa-flask'></i> Our Research"
+      url: "/docs/project/"
+    - label: "<i class='fas fa-users'></i> Meet the Team"
+      url: "/docs/people/"
+  caption: "DIG Lab — Deep Imaging and Graphics"
+
+excerpt: >
+  Advancing the fundamentals of <i>Computer Graphics</i>, <i>Computer Vision</i>,
+  and <i>Generative AI</i> — from real-time rendering engines to active digital
+  twins, sim-to-real robot learning, and vision-language-action models.
 
 feature_row:
-#  - image_path: /assets/images/wordcloud.png
-#    alt: "customizable"
-#    title: "Super customizable"
-#    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-#    url: "/docs/configuration/"
-#    btn_class: "btn--primary"
-#    btn_label: "Learn more"
-#  - image_path: /assets/images/mm-responsive-feature.png
-#    alt: "fully responsive"
-#    title: "Responsive layouts"
-#    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-#    url: "/docs/layouts/"
-#    btn_class: "btn--primary"
-#    btn_label: "Learn more"
-#  - image_path: /assets/images/mm-free-feature.png
-#    alt: "100% free"
-#    title: "100% free"
-#    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-#    url: "/docs/license/"
-#    btn_class: "btn--primary"
-#    btn_label: "Learn more"      
+  - image_path: /assets/images/projects/p1_vxgi_reflection.png
+    alt: "Real-time Graphics Engine"
+    title: "Real-time Graphics Engine"
+    excerpt: "VXGI, DirectX 12 pipeline optimization, and advanced shadow rendering for production-quality real-time visuals."
+    url: "/docs/project/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/projects/p2_hair_dit.png
+    alt: "Generative AI"
+    title: "Generative AI for 3D Content"
+    excerpt: "Diffusion-transformer architectures for controllable hair editing, neural dental texturing, and 3D-aware generation."
+    url: "/docs/project/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/projects/p5_alignment.png
+    alt: "Active Digital Twin"
+    title: "Active Digital Twin via 3DGS"
+    excerpt: "On-the-fly 3D Gaussian Splatting with rig constraints, uncertainty-driven view planning, and medium reformulation."
+    url: "/docs/project/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 
-# .text-justify 
+feature_row2:
+  - image_path: /assets/images/projects/p3_genesis_sim.png
+    alt: "Genesis Sim2Real"
+    title: "Genesis-based Sim-to-Real Transfer"
+    excerpt: "Real-to-Sim calibration, residual reinforcement learning, and large-scale multi-agent training on the Genesis physics engine — bridging simulated policies to physical robots."
+    url: "/docs/project/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
+feature_row3:
+  - image_path: /assets/images/wordcloud8.png
+    alt: "AlphaMayo VLA"
+    title: "AlphaMayo: Vision-Language-Action Models"
+    excerpt: "A unified VLA foundation framework for language-conditioned manipulation, cross-embodiment generalization, and long-horizon planning — synergizing with our sim-to-real and active perception efforts."
+    url: "/docs/project/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+
+feature_row4:
+  - image_path: /assets/images/wordcloud7.png
+    alt: "Open-Vocabulary Perception"
+    title: "Open-Vocabulary Perception"
+    excerpt: "Segmentation, detection, and instance discovery driven by foundation models — promptable concept segmentation, open-vocab 3D understanding, and video instance continuity."
+    url: "/docs/project/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
-We focus on 
-<br>1. <U>development of valuable imaging content incorporating the latest AI technology</U>, and 
+
+We focus on
+<br>1. <U>development of valuable imaging content incorporating the latest AI technology</U>, and
 <br>2. <U>research on the underlying technology of AI-based imaging content</U>,
-<br>based on the fundamentals of *<U>Computer Graphics</U>* and *<U>Computer Vision</U>*.
-<br>Our laboratory is carrying out various academic-industrial cooperation projects, through which we provide in-depth programming experiences from *native programming for experimental/commercial engine library* to *plug-in development for high-level editors such as Unreal Engine*.
+<br>based on the fundamentals of *<U>Computer Graphics</U>*, *<U>Computer Vision</U>*, and *<U>Generative AI</U>*.
+<br><br>Our six active research thrusts span from low-level **graphics engine development** and **generative AI for 3D content**, to high-level **sim-to-real robot learning**, **vision-language-action models**, **active digital twins**, and **open-vocabulary perception**. Through industry–academic collaborations, we provide in-depth programming experiences ranging from native programming for experimental/commercial engine libraries to plug-in development for high-level editors such as Unreal Engine.
+
 {% include feature_row %}
+
+{% include feature_row id="feature_row2" type="left" %}
+
+{% include feature_row id="feature_row3" type="right" %}
+
+{% include feature_row id="feature_row4" type="left" %}
