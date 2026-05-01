@@ -22,12 +22,12 @@ excerpt: >
 
 ## Who We Are
 
-The **Deep Imaging and Graphics (DIG) Lab** at Kwangwoon University pursues
-research at the intersection of **computer graphics, computer vision, and
-generative AI**. We believe the most exciting problems sit *between* these
-fields — where physically-grounded rendering meets learned generative priors,
-and where simulation, reconstruction, and perception become parts of a single
-imaging stack.
+The **Deep Imaging and Graphics (DIG) Lab** pursues research at the
+intersection of **computer graphics, computer vision, and generative AI**.
+We believe the most exciting problems sit *between* these fields — where
+physically-grounded rendering meets learned generative priors, and where
+simulation, reconstruction, and perception become parts of a single imaging
+stack.
 
 ## What We Aim For
 
