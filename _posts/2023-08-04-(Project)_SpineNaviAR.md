@@ -1,25 +1,49 @@
 ---
-title: "AR Navigation System"
+title: "AR Navigation-based Surgical Guidance System"
 date: 2023-04-01 -0000
 categories:
   - Projects
 #tags:
-#  - Native C++
+#  - Augmented Reality
+#  - Surgical Navigation
 #  - Tracking
 #  - Calibration
 header:
   teaser: "/assets/images/ar_navi_teasor.jpg"
   image: "/assets/images/ar_navi1.jpg"
 ---
-One of the most important applications of augmented reality is navigation. We have experience in conducting a large-scale government-supported AR project, where we have successfully developed an efficient AR tracking and calibration system to integrate data scanned from various devices into a single image. We have the capability to develop technology that projects information acquired from various sensor data into a single image. 
+We have developed an **AR navigation-based surgical guidance system** that
+augments a surgeon's view with intra-operative imaging and tool-tracking
+information. Building on our experience from a large-scale
+government-supported AR project — where we built efficient AR tracking and
+calibration pipelines that integrated scans from multiple devices into a
+single registered image — we extend this capability to the surgical setting,
+where precision, robustness, and intuitive visualization are critical.
 
-Recently, we have been working on a project to **build a navigation system for simple surgery**. The surgical area is captured by **an X-ray system known as the C-arm, and images from this system should project surgical tools and auxiliary surgical information**. **The final navigation image will be displayed onto the user's view, i.e., augmented reality**. In this project, we are researching and developing the following challenging components:
+The system targets **simple surgical workflows** in which the surgical area
+is captured by an **X-ray C-arm** and the resulting images are used to
+project surgical tools and auxiliary surgical information into the user's
+view. The goal is to deliver an AR navigation image that gives the surgeon
+spatially registered guidance without disrupting the operative flow.
 
-1. Due to the X-rays, continuous shooting is not allowed; thus, we are develpoing an easy and automated X-ray view calibration process from an operational perspective,
-2. High-precision/occlusion-free tool tracking through a combination of optical tracking and non-optical tracking data,
-3. Recognizing the patient's pose through RGB camera image analysis and updating surgical information based on the pose information,
-4. AR camera calibration using surgical tools,
-5. Effective visualization of X-ray surgical navigation images onto the user's view.
+Within this project, we have been researching and developing the
+following challenging components:
+
+1. **Operationally easy X-ray view calibration**: Because continuous X-ray
+   shooting is not allowed, we developed an automated, user-friendly
+   calibration procedure tailored to the operational constraints.
+2. **High-precision, occlusion-robust tool tracking**: A combined optical
+   and non-optical tracking pipeline that delivers reliable tool poses
+   even under partial occlusion in the surgical field.
+3. **Patient-pose-aware information update**: Recognizing patient pose
+   from RGB camera analysis and updating the surgical information layer
+   accordingly.
+4. **AR camera calibration using surgical tools**: Using the tracked
+   surgical tools themselves as calibration targets for the AR camera,
+   simplifying the in-room calibration procedure.
+5. **Effective AR visualization**: Designing the on-view rendering of
+   X-ray-derived surgical guidance so that it remains informative without
+   overwhelming the surgeon's perception.
 
 <figure>
 	<img src="/assets/images/ar_navi2.jpg">
@@ -33,7 +57,7 @@ Recently, we have been working on a project to **build a navigation system for s
 
 {% capture programming %}
 #### programming experience
-C++, Python, Pytorch, Tensorflow
+C++, Python, OpenCV, Graphics Engine APIs
 {% endcapture %}
 
 <div class="notice">{{ programming | markdownify }}</div>

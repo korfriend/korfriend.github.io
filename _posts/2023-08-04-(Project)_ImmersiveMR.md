@@ -1,40 +1,55 @@
 ---
-title: "Immersive Mixed Reality"
+title: "Immersive Extended Reality Experience"
 date: 2022-07-01 -0000
 categories:
   - Projects
 #tags:
-#  - Unreal Engine 5
-#  - Immersive Mixed Reality
-#  - NeRF
-#  - AI agent
+#  - Unreal Engine
+#  - Immersive XR
+#  - LLM AI Agent
+#  - Generative AI
 header:
   teaser: "/assets/images/imm_mr_teasor.jpg"
   image: "/assets/images/imm_mr1.jpg"
-  #video:
-  #  id: dopb_-vy9n8
-  #  provider: youtube
 ---
-Based on our technological development experience in computer graphics and computer vision, we have been developing mixed reality applications that offer the ultimate immersion and researching the underlying technologies. By integrating various sensor data provided by immersive HMDs with external sensor data to track the human actions and real environment, then projecting the tracking things onto the virtual environment, we aim to provide a high-quality immersive mixed reality experience.
+Building on our experience in computer graphics and computer vision, we
+develop **immersive extended reality (XR) experiences** that combine the
+latest **Unreal Engine** features with modern AI to deliver high-fidelity
+interactive content. Our focus is on bringing together hyper-realistic
+rendering, character animation, and AI-driven interaction so that users
+can engage with virtual environments in ways that feel responsive and
+believable.
 
-To this end, we are leveraging artificial intelligence technology for user interaction through media to develop:
+Specifically, we are interested in:
 
-1. A plugin that efficiently controls the hyper-realistic rendering effects provided by the Unreal Engine and the high-quality human resource, MetaHuman,
-2. A hyper-realistic user-reactive AI agent utilizing audio recognition and the LLM AI modules,
-3. An immersive on-site content creation and sharing system using NeRF technology,
+1. **AI characters connected to LLMs** — interactive virtual humans
+   (e.g., Unreal Engine MetaHuman) whose dialogue, behavior, and reactions
+   are driven by large language models, supporting natural,
+   context-aware conversations and decision-making inside XR scenes.
+2. **Generative-model-powered XR content** — applying modern image,
+   video, and 3D generative models to author and adapt XR content on the
+   fly, enabling diverse application cases that go beyond pre-authored
+   assets.
+3. **High-quality immersive plug-ins** — efficient plug-ins on top of
+   Unreal Engine's hyper-realistic rendering pipeline and MetaHuman
+   resources, designed to make these capabilities accessible to
+   domain-specific applications.
 
-Based on the understanding of the above technologies, our laboratory has been conducting projects for **immersive exposure therapy content with [Seoul National University Dental Hospital, Prof. HyunJeong Kim](https://dentbio.snu.ac.kr/research/lab/dal/)**, and **immersive diagnostic examinations content with [HALLYM UNIV. MEDICAL CENTER](https://research.hallym.or.kr/hallym_hit/hallymuniv_sub.asp?screen=ptm140)**.
+In an earlier collaboration, our laboratory worked on
+**immersive exposure therapy content with
+[Seoul National University Dental Hospital, Prof. HyunJeong Kim](https://dentbio.snu.ac.kr/research/lab/dal/)**,
+applying immersive XR to clinical exposure-therapy scenarios.
 
 {% include video id="dopb_-vy9n8" provider="youtube" caption="Exposure therapy for crowd phobia, subway situation"%}
 
 <figure>
 	<img src="/assets/images/imm_mr2.jpg">
-  <figcaption>HMD AR spine surgery collaborating with Seoul National Univ. Bundang Hospital</figcaption>
+  <figcaption>Immersive XR scene from our exposure-therapy collaboration.</figcaption>
 </figure>
 
 {% capture programming %}
 #### programming experience
-Unreal Engine C++/Blueprint, Python
+Unreal Engine C++/Blueprint, Python, LLM/agent frameworks
 {% endcapture %}
 
 <div class="notice">{{ programming | markdownify }}</div>

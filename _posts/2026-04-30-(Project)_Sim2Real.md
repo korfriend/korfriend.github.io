@@ -32,10 +32,12 @@ Recent directions include:
    simulators where calibration alone is insufficient (terrain, contact,
    suspension dynamics).
 
-<figure class="half">
-	<img src="/assets/images/projects/p3_genesis_sim.png">
-	<img src="/assets/images/projects/p3_tank_rotate.png">
-  <figcaption>Genesis-based simulation environments (left) and multi-agent tank training (right).</figcaption>
+<figure>
+	<video autoplay loop muted playsinline style="width:100%;">
+		<source src="/assets/images/projects/sim2sim.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+  <figcaption>Trajectory-to-State (path-to-ST) and ST inverse-mapper in action — calibrating observed trajectories to Genesis simulator states for residual-RL training.</figcaption>
 </figure>
 
 {% capture programming %}
