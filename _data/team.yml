@@ -182,9 +182,10 @@ team_members:
       - label: Matte-gated ControlNet
         url: /Projects/hair-style-dit/
   - name: Dongwook Kang (Undergraduate Researcher)
-    bio: I am interested in large-scale multi-agent reinforcement learning, working
-      with the Genesis physics engine for tank combat simulation and sim2real
-      transfer.
+    bio: I lead our Genesis-based Real2Sim project — spanning state and
+      trajectory-to-state mappers, inverse-dynamics calibration, residual
+      reinforcement learning (BC + RL), and large-scale multi-agent
+      combat simulation.
     keywords:
       - label: ST2ST Mapper
         url: /Projects/real2sim-sim2real/
