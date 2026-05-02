@@ -1,12 +1,12 @@
 ---
-title: "Dental Realistic Inverse Graphics — DiT × Gaussian Splatting"
+title: "Dental Realistic Inverse Graphics"
 permalink: /Projects/dental-inverse-graphics/
 date: 2026-04-30 -0000
 categories:
   - Projects
 header:
-  teaser: "/assets/images/projects/dental_inverse_tisor.jpg"
-  image: "/assets/images/projects/dental_inverse_tisor.jpg"
+  teaser: "/assets/images/projects/dental_dynamics_teaser.jpg"
+  image: "/assets/images/projects/dental_dynamics_teaser.jpg"
 ---
 We develop a **photorealistic inverse-graphics pipeline for the dental domain**
 that combines diffusion-transformer (DiT) priors with 3D Gaussian Splatting (3DGS)
@@ -28,8 +28,8 @@ Recent directions include:
    the dental setting.
 
 <figure>
-	<img src="/assets/images/projects/dental_inverse_tisor.jpg">
-  <figcaption>Dental realistic inverse-graphics — coupling DiT priors with Gaussian Splatting and differentiable rendering.</figcaption>
+	<img src="/assets/images/projects/dental_exp.jpg">
+  <figcaption>Experimental results from our dental inverse-graphics pipeline — DiT-driven texture priors fused with multi-view differentiable rendering for view-consistent crown appearance recovery.</figcaption>
 </figure>
 
 {% capture programming %}
