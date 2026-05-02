@@ -106,9 +106,9 @@ analytics:
 author:
   name             : "Dr. Dongjoon Kim"
   avatar           : "/assets/images/dojo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Associate Professor at Kwangwoon University. <br> <b>(EDUCATION)</b> Ph.D. & M.S. Computer Science Engineering 
-  at Seoul National University. B.S. Electrical Engineering at Seoul National University. 
-  <br><b>(KEYWORDS)</b>: [Skillful SW engineer] [Custom-built, open-source, general-purpose rendering engine] [Interactive AI technologies]."
+  bio              : "Associate Professor at Kwangwoon University. <br> <b>(EDUCATION)</b> Ph.D. & M.S. Computer Science Engineering
+  at Seoul National University. B.S. Electrical Engineering at Seoul National University.
+  <br><b>(KEYWORDS)</b>: [Computer Graphics] [Computer Vision] [Differentiable Graphics Engine] [Neural Physics] [World Model] [In-house Graphics Engine] [eXtended Reality] [Dental/Medical Imaging] [Real2Sim/Sim2Real]."
   location         : "Kwangwoon University"
   email            : "korfriend@gmail.com"
   links:
