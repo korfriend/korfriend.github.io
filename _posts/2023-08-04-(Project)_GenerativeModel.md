@@ -41,8 +41,9 @@ The insights from StyleGAN2 inversion directly inform our current
 diffusion-transformer priors for the next generation of controllable
 generation.
 
-<figure>
-	<img src="/assets/images/hairtransfer.jpg">
+<figure class="half">
+	<img src="/assets/images/projects/hairgan1_sketch.jpg">
+	<img src="/assets/images/projects/hairgan2_sketch.jpg">
   <figcaption>Hair transfer results from StyleGAN2-based GAN inversion.</figcaption>
 </figure>
 
