@@ -35,25 +35,25 @@ sidebar:
 
 * * *
 
-### Virtual Reality (U/G 3-2)
+### Extended Reality (U/G 3-2)
 ![](/assets/images/class_vr_teaser.jpg){: width="50%" height="50%"}{: .center}
-<br>This course provides students with how immersive experience in a computer-generated virtual space operates. In this course, students will learn the basic concepts of computer graphics to utilize Unreal Engine editor, experiencing various VR content production.
+<br>This course introduces **eXtended Reality (XR)** — the unified spectrum that spans virtual, augmented, and mixed reality. Building on computer graphics and tracking fundamentals, students learn how immersive experiences are designed and authored with **Unreal Engine 5**, including hyper-realistic rendering, MetaHuman characters, and integration of HMDs and motion sensors. Recent topics such as LLM-connected AI characters and generative-model-driven content authoring are also covered through hands-on projects.
 <br>
->programming: **c++/blueprint, unreal engine 5, oculus quest**
+>programming: **c++/blueprint, unreal engine 5, hmd devices**
 
 * * *
 
-### Augmented Reality (U/G 4-1)
+### Image Generative Model (U/G 4-1)
 ![](/assets/images/class_ar_teaser.gif){: width="50%" height="50%"}{: .center}
-<br>This course covers how the computer vision technology and computer graphics technologies are combined to projects a virtual model into a human's field of view. Using the recent mobile-AI models for the AR components, students will practice creating AR content.
+<br>This course introduces **modern image generative models** — from classical VAE and GAN to recent diffusion models and diffusion transformers (DiT). Students study the mathematical foundations of likelihood-based and score-based generative modeling, learn how to build, fine-tune, and condition generative pipelines, and practice on tasks such as image synthesis, editing, and inversion. Hands-on projects connect the theory to concrete implementations.
 <br>
->programming: **python, opencv, mediapipe**
+>programming: **python, pytorch, tensorflow**
 
 * * *
 
-### Deep Generative Model (G)
+### Neural Graphics (G)
 ![](/assets/images/class_dgm1.gif){: width="50%" height="50%"}{: .center}
 ![](/assets/images/class_dgm2.gif){: width="50%" height="50%"}{: .center}
-<br> In this course, we introduce the VAE (Variational Auto-Encoder) and GAN (Generative Adversarial Network) models, which are classic yet fundamental for understanding generative models, along with their mathematical rationale. We delve into the learning model of StyleGAN2 and various style transfer techniques achieved through feature embedding and parametric encoding, which can be explained by the inverse GAN. We also present the potential of new generative models, representing novel view synthesis through the NeRF model.
+<br>This graduate course introduces the rapidly growing field of **Neural Graphics**, where classical computer graphics meets modern deep learning. We cover **neural radiance fields (NeRF)**, **3D Gaussian Splatting (3DGS)**, **differentiable rendering**, **neural appearance models**, and the integration of **generative priors (DiT, diffusion)** with physically-based rendering. Students study the mathematical underpinnings of these methods and implement core algorithms in hands-on assignments, building a foundation for research at the intersection of graphics, vision, and generative AI.
 <br>
->programming: **python, colmap, pytorch, tensorflow**
+>programming: **python, pytorch, CUDA, custom rasterizer kernels**
