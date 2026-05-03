@@ -79,8 +79,12 @@ with modern AI:
   not only writing papers about them.
 - You want to work *across* graphics, vision, and generative AI, instead of
   staying inside a single sub-area.
-- You enjoy reading the literature *and* getting your hands dirty in CUDA,
-  Vulkan, PyTorch, and Genesis.
+- You enjoy reading the literature *and* getting your hands dirty across the
+  full graphics–AI stack — from **native graphics APIs and engine-level
+  code** (Vulkan, DX12, CUDA) and **modern ML frameworks** (PyTorch,
+  TensorFlow), through **differentiable rendering and physics simulators**
+  (Mitsuba, Genesis), all the way up to **high-level editors and toolkits**
+  (Unreal Engine, Three.js).
 
 If that sounds like you, please reach out — we have open projects across all
 six research lines above, and we welcome new students who are ready for a
