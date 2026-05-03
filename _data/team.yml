@@ -187,7 +187,7 @@ team_members:
       reinforcement learning (BC + RL), and large-scale multi-agent
       combat simulation.
     keywords:
-      - label: ST2ST Mapper
+      - label: Inverse-Dynamics Mapping
         url: /Projects/real2sim-sim2real/
       - label: Multi-Agent Combat RL
         url: /Projects/real2sim-sim2real/
@@ -224,7 +224,7 @@ team_members:
       Genesis simulators, exploring 3D terrain generalization for sim-to-sim
       transfer.
     keywords:
-      - label: Trajectory-to-State Mapping
+      - label: Trajectory-to-Controls (ST, B)
         url: /Projects/real2sim-sim2real/
       - label: Inverse Dynamics Calibration
         url: /Projects/real2sim-sim2real/

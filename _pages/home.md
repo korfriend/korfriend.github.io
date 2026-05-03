@@ -62,7 +62,8 @@ with learning* — into:
 - **3D Gaussian Splatting** — medium-aware models and high-speed
   on-the-fly reconstruction
 - **Real2Sim / Sim2Real** with the **Genesis** physics engine —
-  ST2ST mappers, residual RL, large-scale multi-agent simulation
+  inverse-dynamics and trajectory-to-controls (ST, B) mappers, residual
+  RL, large-scale multi-agent simulation
 - **Domain-optimized segmentation** via SAM 3-class attention tuning
 
 See the [Research Projects]({{ '/docs/project/' | relative_url }}) page for

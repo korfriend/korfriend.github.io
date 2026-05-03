@@ -9,17 +9,25 @@ header:
   image: "/assets/images/projects/inverse_dynamics_teaser.jpg"
 ---
 We develop a unified **Real2Sim / Sim2Real pipeline** built on the **Genesis**
-physics engine, combining classical physics calibration, neural-physics
-correction, and *residual learning* across both supervised and reinforcement
-learning regimes. Our long-term goal is a closed-loop framework where (i)
-real-world rollouts continuously calibrate the simulator, and (ii) policies
-trained in the calibrated sim transfer back to the real platform with
-quantifiable robustness.
+physics engine. At its core are *neural inverse-dynamics* and
+*trajectory-to-controls (ST, B) mappers* that recover control inputs and
+dynamics-correction terms directly from observed real-world rollouts —
+providing the calibrated bridge that supports residual learning, multi-agent
+training, and robust deployment on the physical platform. Our long-term goal
+is a closed-loop framework where (i) real-world rollouts continuously
+calibrate the simulator and recover the latent control trajectory, and
+(ii) policies trained in the calibrated sim transfer back to the real
+platform with quantifiable robustness.
 
 Recent directions include:
-1. **State-to-State (ST2ST) and Trajectory-to-State Mappers**: Lightweight
-   neural mappers that align Genesis dynamics to observed real-world
-   trajectories, reducing sim-to-real gap before policy learning starts.
+1. **Inverse-Dynamics & Trajectory-to-Controls (ST, B) Mappers**: The core
+   of our calibration stack. Given an observed trajectory, lightweight
+   neural mappers recover (a) the underlying control inputs — steering (ST)
+   and brake (B) — and (b) the inverse-dynamics function aligning Genesis
+   to real-world rollouts. This explicit recovery of control + dynamics
+   closes the sim-to-real gap before any policy learning starts and is the
+   common substrate that the rest of the pipeline (residual RL, neural
+   physics, multi-agent training) builds on.
 2. **Residual Learning across Supervised + RL**: A behavior-cloned base
    policy is augmented by a *residual* reinforcement-learning head that
    compensates for covariate shift and unmodeled dynamics, achieving
