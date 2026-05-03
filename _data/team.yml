@@ -193,7 +193,7 @@ team_members:
         url: /Projects/real2sim-sim2real/
       - label: Genesis Physics Simulation
         url: /Projects/real2sim-sim2real/
-    avatar: /assets/images/people/dongwook.jpg
+    avatar: /assets/images/people/Kang_Dong-uk.jpg
     links:
       - label: Email
         icon: fas fa-fw fa-envelope-square
@@ -230,7 +230,7 @@ team_members:
         url: /Projects/real2sim-sim2real/
       - label: 3D Terrain Generalization
         url: /Projects/real2sim-sim2real/
-    avatar: /assets/images/people/mankyo.jpg
+    avatar: /assets/images/people/Jeong_Man-gyo.jpg
     links:
       - label: Email
         icon: fas fa-fw fa-envelope-square
@@ -267,7 +267,7 @@ team_members:
         url: /Projects/real2sim-sim2real/
       - label: Covariate Shift Mitigation
         url: /Projects/real2sim-sim2real/
-    avatar: /assets/images/people/jaewon.jpg
+    avatar: /assets/images/people/Heo_Jae-won.jpg
     links:
       - label: Email
         icon: fas fa-fw fa-envelope-square
@@ -304,7 +304,7 @@ team_members:
         url: /Projects/gaussian-splatting/
       - label: Rig-constrained Reconstruction
         url: /Projects/gaussian-splatting/
-    avatar: /assets/images/people/kyowon.jpg
+    avatar: /assets/images/people/Lee_Kyo-won.jpg
     links:
       - label: Email
         icon: fas fa-fw fa-envelope-square
