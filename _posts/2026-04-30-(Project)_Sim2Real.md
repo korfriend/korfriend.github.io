@@ -5,8 +5,8 @@ date: 2026-04-30 -0000
 categories:
   - Projects
 header:
-  teaser: "/assets/images/projects/inverse_dynamics_tisor.jpg"
-  image: "/assets/images/projects/inverse_dynamics_tisor.jpg"
+  teaser: "/assets/images/projects/inverse_dynamics_teaser.jpg"
+  image: "/assets/images/projects/inverse_dynamics_teaser.jpg"
 ---
 We develop a unified **Real2Sim / Sim2Real pipeline** built on the **Genesis**
 physics engine, combining classical physics calibration, neural-physics

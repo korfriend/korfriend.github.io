@@ -20,12 +20,22 @@ Recent directions include:
    pipeline that fuses DiT-generated texture priors with multi-view
    observations, producing tooth textures that are both globally coherent
    and view-consistent.
-2. **Geometry-aware Relighting**: Lighting-aware DiT conditioning that
-   disentangles albedo from shading so that generated textures relight
-   correctly when re-rendered in arbitrary illumination.
-3. **3DGS-based Inverse Graphics**: Linking learned generative priors to
-   3DGS scene representations for joint geometry-appearance recovery in
-   the dental setting.
+2. **Semantic-aware Photorealistic Inversion**: Recovering rendering
+   materials (BRDFs, sub-surface parameters, illumination) from intra-oral
+   observations under *semantic guidance* — DiT-driven priors that
+   understand structural concepts (e.g., enamel, gum, dentin) so the
+   inverse-graphics solver respects material identity rather than only
+   matching pixel statistics.
+3. **3DGS as a Proxy for Expensive Rendering Kernels**: When the target
+   renderer is heavy (e.g., physically-based path tracing), we distill its
+   appearance into a 3D Gaussian Splatting representation, enabling fast
+   forward and backward passes during inverse-graphics optimization while
+   remaining faithful to the underlying physics.
+4. **Wild NeRF Alignment with Explicit GS Visibility Optimization**:
+   Aligning NeRF reconstructions captured in unconstrained ("in-the-wild")
+   conditions and refining them through 3DGS with *explicit visibility*
+   terms (per-Gaussian opacity, occluder-aware blending) that make the
+   geometry–appearance trade-off interpretable and editable.
 
 <figure>
 	<img src="/assets/images/projects/dental_exp.jpg">
