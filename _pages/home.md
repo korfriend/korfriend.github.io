@@ -14,12 +14,10 @@ header:
       url: "/docs/people/"
   caption: "DIG Lab — Deep Imaging and Graphics"
 
-excerpt: >
-  <strong style="font-size:1.15em;">"AI is the pitch. Not the finish line."</strong>
-  <br><br>
-  AI is about getting ideas out of your head — leveraging your potential, for people to see the vision.
-  <br><br>
-  <strong>AI is your insight transformer.</strong>
+tagline: >
+  **&ldquo;AI is the pitch. Not the finish line.&rdquo;**<br><br>
+  AI is about getting ideas out of your head &mdash; leveraging your potential, for people to see the vision.<br><br>
+  **AI is your insight transformer.**
 ---
 
 ## Who We Are
@@ -49,11 +47,15 @@ stack.
 
 ## Where We Came From, Where We're Going
 
-Over the past decade, the lab has built and shipped a custom **rendering
-engine** used in commercial medical visualization solutions, developed
-**StyleGAN-based hairstyle editing** systems, contributed to **AR
-navigation** for surgical workflows, and explored **NeRF/instant-NGP**
-based scene representations for visualization.
+Over the past decade, the lab has built and shipped an **in-house graphics
+engine** used in commercial medical visualization solutions, applied
+graphics-based techniques to **traditional sensor imaging** and to
+**non-destructive inspection / medical examination** systems, and
+contributed to **AR navigation** for surgical workflows. Building on this
+foundation in classical computer graphics and computer vision, we have
+also leveraged high-end content engines such as **Blender** and **Unreal
+Engine** to author **immersive applications** and to build
+**verification-oriented simulation** environments.
 
 Our current research carries that same DNA — *deep engineering combined
 with learning* — into:
