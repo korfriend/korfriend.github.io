@@ -5,7 +5,7 @@ hidden: true
 
 header:
   overlay_color: "#000"
-  overlay_filter: "0.55"
+  overlay_filter: "0.6"
   overlay_image: /assets/images/projects/p5_run_summary.png
   actions:
     - label: "<i class='fas fa-flask'></i> Research Projects"
@@ -15,9 +15,11 @@ header:
   caption: "DIG Lab — Deep Imaging and Graphics"
 
 excerpt: >
-  At the intersection of <i>Computer Graphics</i>, <i>Computer Vision</i>, and
-  <i>Generative AI</i> — building the foundations for the next generation of
-  imaging systems.
+  <strong style="font-size:1.15em;">"AI is the pitch. Not the finish line."</strong>
+  <br><br>
+  AI is about getting ideas out of your head — leveraging your potential, for people to see the vision.
+  <br><br>
+  <strong>AI is your insight transformer.</strong>
 ---
 
 ## Who We Are
