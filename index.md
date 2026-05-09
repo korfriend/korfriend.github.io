@@ -5,15 +5,12 @@ hidden: true
 author_profile: false
 
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.6"
-  overlay_image: /assets/images/projects/p5_run_summary.png
+  overlay_color: "#EEEEEE"
+  overlay_filter: rgba(0, 0, 0, 0.3)
+  overlay_image: /assets/images/wordcloud8.png
   actions:
-    - label: "<i class='fas fa-flask'></i> Research Projects"
-      url: "/docs/project/"
-    - label: "<i class='fas fa-users'></i> Meet the Team"
-      url: "/docs/people/"
-  caption: "DIG Lab — Deep Imaging and Graphics"
+    - label: "<i class='fas fa-thumbs-up'></i> Join us"
+      url: "mailto:korfriend@gmail.com"
 
 tagline: >
   **&ldquo;AI is the pitch. Not the finish line.&rdquo;**<br><br>
