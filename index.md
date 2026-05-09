@@ -11,14 +11,14 @@ header:
   actions:
     - label: "<i class='fas fa-thumbs-up'></i> Join us"
       url: "mailto:korfriend@gmail.com"
-
-tagline: >
-  **&ldquo;AI is the pitch. Not the finish line.&rdquo;**<br><br>
-  AI is about getting ideas out of your head &mdash; leveraging your potential, for people to see the vision.<br><br>
-  **AI is your insight transformer.**
 ---
 
-## Who We Are
+## &ldquo;AI is the pitch. Not the finish line.&rdquo;
+
+*AI is about getting ideas out of your head — leveraging your potential,
+for people to see the vision.*
+
+**AI is your insight transformer.**
 
 The **Deep Imaging and Graphics (DIG) Lab** pursues research at the
 intersection of **computer graphics, computer vision, and generative AI**.
