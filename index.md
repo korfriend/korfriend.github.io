@@ -14,7 +14,8 @@ header:
       url: "mailto:korfriend@gmail.com"
 
 tagline: >
-  *AI is about getting ideas out of your head &mdash; leveraging your potential, realizing your insights.*<br><br>
+  *AI is about getting ideas out of your head &mdash;<br>
+  leveraging your potential, realizing your insights.*<br><br>
   **Ready to step onto the pitch?**
 ---
 
