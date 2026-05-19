@@ -27,10 +27,9 @@ Recent directions include:
    per-camera to per-rig, enabling real-time incremental reconstruction
    with strong robustness over classic SfM pipelines.
 
-<figure class="half">
-	<img src="/assets/images/projects/p5_alignment.png">
-	<img src="/assets/images/projects/p5_run_summary.png">
-  <figcaption>Rig-constrained on-the-fly 3DGS — alignment and run summary.</figcaption>
+<figure>
+	<img src="/assets/images/projects/point_gs_active_dt.jpg">
+  <figcaption>3D Gaussian Splatting toward active digital twins &mdash; medium-aware volumetric formulation and real-time incremental reconstruction.</figcaption>
 </figure>
 
 {% capture programming %}
