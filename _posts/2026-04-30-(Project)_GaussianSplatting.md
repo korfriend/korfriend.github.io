@@ -5,7 +5,7 @@ date: 2026-04-30 -0000
 categories:
   - Projects
 header:
-  teaser: "/assets/images/projects/p5_alignment.png"
+  teaser: "/assets/images/point_gs_active_dt.jpg"
   image: "/assets/images/projects/p5_run_summary.png"
 ---
 We push **3D Gaussian Splatting (3DGS)** as a unifying scene representation
