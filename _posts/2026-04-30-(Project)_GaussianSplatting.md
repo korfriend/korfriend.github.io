@@ -6,7 +6,7 @@ categories:
   - Projects
 header:
   teaser: "/assets/images/projects/point_gs_active_dt.jpg"
-  image: "/assets/images/projects/p5_run_summary.png"
+  image: "/assets/images/projects/point_gs_active_dt.jpg"
 ---
 We push **3D Gaussian Splatting (3DGS)** as a unifying scene representation
 for both *physically-grounded reconstruction* and *real-time digital twins*.
@@ -27,9 +27,10 @@ Recent directions include:
    per-camera to per-rig, enabling real-time incremental reconstruction
    with strong robustness over classic SfM pipelines.
 
-<figure>
-	<img src="/assets/images/projects/point_gs_active_dt.jpg">
-  <figcaption>3D Gaussian Splatting toward active digital twins &mdash; medium-aware volumetric formulation and real-time incremental reconstruction.</figcaption>
+<figure class="half">
+	<img src="/assets/images/projects/p5_alignment.png">
+	<img src="/assets/images/projects/p5_run_summary.png">
+  <figcaption>Rig-constrained on-the-fly 3DGS — alignment and run summary.</figcaption>
 </figure>
 
 {% capture programming %}
