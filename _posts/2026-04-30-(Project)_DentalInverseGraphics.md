@@ -8,43 +8,62 @@ header:
   teaser: "/assets/images/projects/dental_dynamics_teaser.jpg"
   image: "/assets/images/projects/dental_dynamics_teaser.jpg"
 ---
-We develop a **photorealistic inverse-graphics pipeline for the dental domain**
-that combines diffusion-transformer (DiT) priors with 3D Gaussian Splatting (3DGS)
-representations and differentiable physically-based rendering. The goal is to
-recover crown geometry, material parameters, and scene illumination from
-real intra-oral imaging, while *generating* high-fidelity dental textures
-that remain consistent across views and lighting conditions.
+We turn a **single-material 3D mesh equipped with semantic part labels**
+(enamel, gum, dentin, per-tooth IDs) into a full pipeline for
+**photorealistic dental image synthesis, open-model distillation, and
+large-scale segmentation data generation** — while remaining tightly
+coupled to our existing dental **inverse-graphics and realistic
+visualization** stack (DiT priors, 3D Gaussian Splatting, differentiable
+physically-based rendering).
 
 Recent directions include:
-1. **Multi-view Texture Optimization**: A Mitsuba3-based differentiable
-   pipeline that fuses DiT-generated texture priors with multi-view
-   observations, producing tooth textures that are both globally coherent
-   and view-consistent.
-2. **Semantic-aware Photorealistic Inversion**: Recovering rendering
-   materials (BRDFs, sub-surface parameters, illumination) from intra-oral
-   observations under *semantic guidance* — DiT-driven priors that
-   understand structural concepts (e.g., enamel, gum, dentin) so the
-   inverse-graphics solver respects material identity rather than only
-   matching pixel statistics.
-3. **3DGS as a Proxy for Expensive Rendering Kernels**: When the target
-   renderer is heavy (e.g., physically-based path tracing), we distill its
-   appearance into a 3D Gaussian Splatting representation, enabling fast
-   forward and backward passes during inverse-graphics optimization while
-   remaining faithful to the underlying physics.
-4. **Wild NeRF Alignment with Explicit GS Visibility Optimization**:
-   Aligning NeRF reconstructions captured in unconstrained ("in-the-wild")
-   conditions and refining them through 3DGS with *explicit visibility*
-   terms (per-Gaussian opacity, occluder-aware blending) that make the
-   geometry–appearance trade-off interpretable and editable.
+1. **Semantic-Mesh-Driven Photorealistic Synthesis &mdash; Teacher-Anchored
+   Hybrid Pipeline**: Given a single-material mesh with semantic regions,
+   we generate the **anchor view** with a strong proprietary diffusion
+   teacher (Gemini-class), exploiting its semantic-aware zero-context
+   generation. The anchor texture is baked back onto the mesh via
+   sampling-aware multi-view baking (gathering + z-buffer + cliff masks),
+   and remaining views are completed by an open-source
+   multi-ControlNet (semantic + depth + hole-mask) inpainting stack on
+   the *residual holes only*. The proprietary footprint is reduced to
+   **a single anchor view per mesh**.
+2. **Open-Model Distillation from a Proprietary Teacher**: We treat
+   Gemini-class models as a black-box teacher and distill their
+   high-fidelity, semantic-aware appearance into an open-source SDXL +
+   multi-ControlNet inpainting stack. The mesh-aware anchor texture
+   serves as an *image-level distillation target* that conditions the
+   open model so it only has to fill **small, context-rich residual
+   holes** &mdash; the regime in which open-source inpainting is
+   strongest. The result is an end-to-end open pipeline whose quality
+   is anchored, but no longer bottlenecked, by a single proprietary
+   call.
+3. **Tooth Segmentation Data Pipeline &mdash; Synthetic Supervision at
+   Scale**: Because the underlying mesh carries semantic part labels,
+   every rendered view automatically comes paired with **perfect
+   ground-truth segmentation masks** (per-tooth, gum, occlusal surface).
+   The teacher-anchored renderer becomes a synthetic dataset generator
+   that emits thousands of *(photorealistic image, exact mask)* pairs
+   across varied viewpoints, illumination, and material parameters,
+   directly feeding downstream tooth segmentation, detection, and
+   instance models.
+4. **Plug-in to Dental Realistic Visualization and Inverse Graphics**:
+   The same multi-view texture / material stack composes with our
+   existing **photorealistic dental visualization** and
+   **inverse-graphics solvers** &mdash; DiT-driven priors, Mitsuba3-based
+   differentiable rendering, 3DGS proxies for expensive path-tracing
+   kernels, and wild NeRF / 3DGS alignment with explicit visibility
+   terms. The synthetic data pipeline and the real-data inverse pipeline
+   share representations and downstream consumers, so improvements on
+   either side propagate to the other.
 
 <figure>
 	<img src="/assets/images/projects/dental_exp.jpg">
-  <figcaption>Experimental results from our dental inverse-graphics pipeline — DiT-driven texture priors fused with multi-view differentiable rendering for view-consistent crown appearance recovery.</figcaption>
+  <figcaption>Teacher-anchored multi-view dental texture synthesis — a single proprietary anchor view paired with open-source multi-ControlNet residual filling, jointly enabling photorealistic visualization and a perfect-GT segmentation data pipeline driven by the underlying semantic mesh.</figcaption>
 </figure>
 
 {% capture programming %}
 #### programming experience
-Python, PyTorch, Mitsuba3, Diffusers, 3D Gaussian Splatting frameworks
+Python, PyTorch, Diffusers (SDXL + multi-ControlNet inpainting), Gemini API, Mitsuba3 differentiable rendering, 3D Gaussian Splatting frameworks, semantic-mesh texture baking (xatlas, z-buffer, cliff masks), perfect-GT synthetic data pipelines
 {% endcapture %}
 
 <div class="notice">{{ programming | markdownify }}</div>
