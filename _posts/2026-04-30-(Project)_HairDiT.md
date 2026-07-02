@@ -5,8 +5,8 @@ date: 2026-04-30 -0000
 categories:
   - Projects
 header:
-  teaser: "/assets/images/hairtransfer.jpg"
-  image: "/assets/images/hairtransfer.jpg"
+  teaser: "/assets/images/projects/hair_conditioned_dit_teaser.jpg"
+  image: "/assets/images/projects/hair_conditioned_dit_teaser.jpg"
 ---
 We study **sketch-based hair editing on a frozen diffusion-transformer (DiT)
 backbone**. Building on our prior GAN-inversion work for hairstyle
@@ -38,8 +38,8 @@ Recent directions include:
    to the hair while identity, skin, and background are preserved.
 
 <figure>
-	<img src="/assets/images/hairtransfer.jpg">
-  <figcaption>Matte-conditioned sketch latents steer a frozen diffusion transformer to produce realistic, stroke-faithful hair, with a training-free latent blending step preserving the surrounding portrait.</figcaption>
+	<img src="/assets/images/projects/hair_conditioned_dit_panel.jpg">
+  <figcaption>Colored sketch strokes (left) condition a frozen diffusion transformer to synthesize realistic, stroke-faithful hair (right); matte conditioning steers the edit inside the hair region while a training-free latent blending step preserves the surrounding portrait.</figcaption>
 </figure>
 
 {% capture programming %}
