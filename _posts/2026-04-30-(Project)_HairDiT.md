@@ -1,5 +1,5 @@
 ---
-title: "DiT-based Controllable Hair Style Editing"
+title: "SketchHair-DiT: Matte-Conditioned Sketch Latents for Hair Editing"
 permalink: /Projects/hair-style-dit/
 date: 2026-04-30 -0000
 categories:
@@ -8,32 +8,43 @@ header:
   teaser: "/assets/images/hairtransfer.jpg"
   image: "/assets/images/hairtransfer.jpg"
 ---
-We build **controllable hair-editing systems** on top of diffusion-transformer
-(DiT) backbones. Building on our prior GAN-inversion work for hairstyle
-manipulation, this line of research moves to modern DiT generative priors
-and explores precise, sketch-driven, identity-preserving hair editing for
-realistic portrait imagery.
+We study **sketch-based hair editing on a frozen diffusion-transformer (DiT)
+backbone**. Building on our prior GAN-inversion work for hairstyle
+manipulation, we attach a lightweight sketch **ControlNet** to a frozen DiT
+generative prior and ask a focused question: *when the sketch is used to edit
+hair, what does the hair matte add?* The goal is portrait hair that is at once
+faithful to the user's colored strokes and naturally embedded in the face.
 
 Recent directions include:
-1. **Sketch-guided Hair Inpainting**: User-provided strokes condition the
-   generation of new hairstyles that respect both the input sketch and the
-   surrounding facial context.
-2. **Matte-gated ControlNet**: A novel control architecture that uses
-   per-pixel hair mattes to gate residual conditioning, enabling
-   high-fidelity editing without leaking content into non-hair regions.
-3. **Context-robust DiT Generation**: Studying how DiT generators interact
-   with surrounding context (face geometry, illumination), and proposing
-   conditioning strategies that yield robust generations across diverse
-   inputs.
+1. **Matte-Conditioned Sketch Latents**: We build the condition on the frozen
+   VAE latent of the *colored* sketch — so hair tone is controlled directly by
+   the strokes — and add two complementary matte signals on the ControlNet: a
+   learnable, region-aware bias that steers the latent *inside* the hair
+   region, and a concatenated raw matte that anchors the edit region. Their
+   gains are additive.
+2. **Optional Residual Gating — a Hairstyle-Dependent Trade-off**: A training
+   choice that makes loose hair more seamless and more faithful to the sketch,
+   while braided styles read better without it — a controllable qualitative
+   knob rather than a one-size-fits-all setting.
+3. **Leakage-Free Evaluation**: We expose an evaluation pitfall — under the
+   standard ground-truth-background protocol, the frozen DiT's global attention
+   lets the preserved background *leak* hair cues into the generated
+   foreground, flattering sketch-only conditioning and hiding the value of the
+   matte. A leakage-free, novel-color, cross-identity protocol removes this
+   artifact and reveals that matte conditioning makes the generated hair
+   markedly more realistic.
+4. **Training-Free Portrait Preservation**: The surrounding portrait is kept
+   intact through a training-free latent blending step, so edits stay confined
+   to the hair while identity, skin, and background are preserved.
 
 <figure>
 	<img src="/assets/images/hairtransfer.jpg">
-  <figcaption>Hair editing — bridging earlier GAN-inversion work with our DiT-based pipeline.</figcaption>
+  <figcaption>SketchHair-DiT — matte-conditioned sketch latents steer a frozen diffusion transformer to produce realistic, stroke-faithful hair, with a training-free latent blending step preserving the surrounding portrait.</figcaption>
 </figure>
 
 {% capture programming %}
 #### programming experience
-Python, PyTorch, Diffusers, ControlNet/DiT frameworks
+Python, PyTorch, Diffusers, frozen DiT backbones + ControlNet conditioning, VAE latent manipulation, training-free latent blending, hair matte estimation
 {% endcapture %}
 
 <div class="notice">{{ programming | markdownify }}</div>
