@@ -1,5 +1,5 @@
 ---
-title: "SketchHair-DiT: Matte-Conditioned Sketch Latents for Hair Editing"
+title: "Conditioned DiT for Sketch Hair Editing"
 permalink: /Projects/hair-style-dit/
 date: 2026-04-30 -0000
 categories:
@@ -39,7 +39,7 @@ Recent directions include:
 
 <figure>
 	<img src="/assets/images/hairtransfer.jpg">
-  <figcaption>SketchHair-DiT — matte-conditioned sketch latents steer a frozen diffusion transformer to produce realistic, stroke-faithful hair, with a training-free latent blending step preserving the surrounding portrait.</figcaption>
+  <figcaption>Matte-conditioned sketch latents steer a frozen diffusion transformer to produce realistic, stroke-faithful hair, with a training-free latent blending step preserving the surrounding portrait.</figcaption>
 </figure>
 
 {% capture programming %}
