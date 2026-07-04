@@ -5,8 +5,8 @@ date: 2026-04-30 -0000
 categories:
   - Projects
 header:
-  teaser: "/assets/images/projects/hair_conditioned_dit_teaser.jpg"
-  image: "/assets/images/projects/hair_conditioned_dit_teaser.jpg"
+  teaser: "/assets/images/projects/hair_demo_ui.jpg"
+  image: "/assets/images/projects/hair_demo_ui.jpg"
 ---
 We study **sketch-based hair editing on a frozen diffusion-transformer (DiT)
 backbone**. Building on our prior GAN-inversion work for hairstyle
