@@ -38,8 +38,8 @@ Recent directions include:
    to the hair while identity, skin, and background are preserved.
 
 <figure>
-	<img src="/assets/images/projects/hair_conditioned_dit_panel.jpg">
-  <figcaption>Colored sketch strokes (left) condition a frozen diffusion transformer to synthesize realistic, stroke-faithful hair (right); matte conditioning steers the edit inside the hair region while a training-free latent blending step preserves the surrounding portrait.</figcaption>
+	<img src="/assets/images/projects/hair_comparison_grid.jpg">
+  <figcaption>Qualitative comparison of sketch-based hair editing. Given a source portrait and a matte+sketch input, our matte-conditioned frozen-DiT approach produces hair that follows the strokes while staying realistic and naturally embedded in the portrait, compared against representative sketch-, reference-, and text-driven baselines.</figcaption>
 </figure>
 
 {% capture programming %}
