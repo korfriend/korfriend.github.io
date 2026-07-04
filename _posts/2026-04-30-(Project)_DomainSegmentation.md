@@ -2,6 +2,7 @@
 title: "Domain-Optimized Segmentation via SAM3 Attention Tuning"
 permalink: /Projects/domain-segmentation/
 date: 2026-04-30 -0000
+published: false  # temporarily hidden — re-enable when a student is assigned
 categories:
   - Projects
 header:
