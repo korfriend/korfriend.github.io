@@ -144,43 +144,6 @@ team_members:
         url: /Projects/graphics-engine/
       - label: DirectX 12 Pipeline
         url: /Projects/graphics-engine/
-  - name: Hyuntaek Seo (Undergraduate Researcher)
-    bio: I work on controllable hair editing using sketch-guided diffusion models,
-      focusing on context-robust generation and matte-gated ControlNet
-      architectures in DiT frameworks.
-    avatar: /assets/images/people/hyuntaek.jpg
-    links:
-      - label: Email
-        icon: fas fa-fw fa-envelope-square
-        url: skht0158@gmail.com
-      - label: Website
-        icon: fas fa-fw fa-link
-        url: null
-      - label: Twitter
-        icon: fab fa-fw fa-twitter-square
-        url: null
-      - label: Facebook
-        icon: fab fa-fw fa-facebook-square
-        url: null
-      - label: GitHub
-        icon: fab fa-fw fa-github
-        url: https://github.com/agliotomato
-      - label: GitLab
-        icon: fab fa-fw fa-gitlab
-        url: null
-      - label: Bitbucket
-        icon: fab fa-fw fa-bitbucket
-        url: null
-      - label: Instagram
-        icon: fab fa-fw fa-instagram
-        url: null
-    keywords:
-      - label: DiT-based Hair Editing
-        url: /Projects/hair-style-dit/
-      - label: Sketch-guided Inpainting
-        url: /Projects/hair-style-dit/
-      - label: Matte-gated ControlNet
-        url: /Projects/hair-style-dit/
   - name: Dongwook Kang (Undergraduate Researcher)
     bio: I lead our Genesis-based Real2Sim project — spanning state and
       trajectory-to-state mappers, inverse-dynamics calibration, residual

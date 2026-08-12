@@ -188,3 +188,11 @@ team_members:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url:
+
+- name        : "Hyuntaek Seo (BS)"
+  bio         :
+  avatar      :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:skht0158@gmail.com"
