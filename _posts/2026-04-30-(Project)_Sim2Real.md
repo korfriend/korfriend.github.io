@@ -31,13 +31,13 @@ that the *target* dynamic system needs in order to realize it. We call this
 **Path2ST**.
 
 <figure>
-	<img src="/assets/images/projects/phys_path2st_transfer.jpg">
-  <figcaption>Cross-system transfer. A trajectory observed in a source system (left) is reproduced in the target engine two ways: by replaying the source controls open-loop (middle), and by converting the path through Path2ST into controls appropriate to the target dynamics (right). Open-loop replay accumulates error because the two systems do not share a dynamics model.</figcaption>
+	<img src="/assets/images/blender_genesis_st.gif">
+  <figcaption>Cross-system transfer. A trajectory recorded in the source system (left, Blender) is reproduced in the target engine two ways: by replaying the source steering and throttle open-loop (middle), and by converting the path through Path2ST into controls appropriate to the target dynamics (right). Open-loop replay accumulates error because the two systems do not share a dynamics model.</figcaption>
 </figure>
 
 <figure>
-	<img src="/assets/images/projects/phys_path2st_mapping.jpg">
-  <figcaption>The conversion itself: curvature and longitudinal acceleration sampled along the reference path are mapped to the steering and throttle that the target vehicle model requires at that instant.</figcaption>
+	<img src="/assets/images/blender_genesis_st2.gif">
+  <figcaption>The conversion itself: curvature and longitudinal acceleration sampled along the reference path are mapped to the steering and throttle the target vehicle model requires at that instant.</figcaption>
 </figure>
 
 ## How the conversion is made fast and precise
