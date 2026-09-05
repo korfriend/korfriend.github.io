@@ -1,120 +1,152 @@
 ---
-title: "Real2Sim & Sim2Real — Differentiable Vehicle Physics and Control"
+title: "Real2Sim & Sim2Real — Aligning Dynamics Across Physics Systems"
 permalink: /Projects/real2sim-sim2real/
 date: 2026-04-30 -0000
+published: true
 categories:
   - Projects
 header:
-  teaser: "/assets/images/projects/phys_world_teaser.jpg"
-  image: "/assets/images/projects/phys_world_teaser.jpg"
+  teaser: "/assets/images/projects/phys_sim_world_teaser.jpg"
+  image: "/assets/images/projects/phys_sim_world_teaser.jpg"
 ---
-We build an **explicit, state-space world model** for vehicles — an executable
-world in which geometry, contacts and material parameters are represented
-explicitly, and on top of which a car can be identified, controlled and
-trained. Unlike pixel-level or latent world models that predict future frames,
-every quantity here is a real state variable: pose, velocity, wheel contact,
-mass, friction. The simulation is therefore causal, reproducible, and open to
-gradient-based identification, and rendering becomes a *consequence* of that
-state rather than the model itself.
+Two physics systems never agree. Record a vehicle following a path — in the
+real world, or in another simulator — then feed exactly the same steering and
+throttle into a different engine, and the vehicle will not follow the same
+path. Tire model, contact solver, integrator, mass distribution: every one of
+them differs, and the errors compound.
 
-The physics layer is built on the **Genesis** engine — GPU-batched parallel
-environments, deterministic state transitions, runtime domain randomization,
-and, most importantly, a **differentiable dynamics kernel**. Because gradients
-flow through the whole simulator, real-world driving error can be
-back-propagated into physical parameters (Real2Sim system identification), and
-the control that produces a target trajectory can be solved directly instead of
-being searched for by trial and error.
+That disagreement is the core problem of this project. **We work on aligning
+dynamics across different physics systems** — recovering, for a target physics
+engine, the control inputs that make it reproduce an observed trajectory. This
+is what makes a simulator a usable stand-in for the real world, and it is the
+foundation everything else here is built on: without it, a policy trained in
+simulation is trained against the wrong physics.
 
-Recent directions include:
+## Path2ST — converting a path into the target system's controls
 
-1. **Hybrid Control — Offline Inverse Look-up with Feedback**: Differentiable
-   inverse control is accurate but costs about 299 ms per control step. We
-   instead sweep the drive-train offline into a (speed × throttle →
-   acceleration) table, invert that table at run time, and close the loop with
-   a PD steering correction. This runs in 0.056 ms per step — roughly 5,300×
-   faster — while tracking at least as well (0.044 m mean cross-track error
-   against 0.078 m), leaving the differentiable solver for offline
-   identification where its cost is affordable.
-
-2. **Differentiable Physics Where the Table Stops Working**: A look-up table
-   only covers the states it was swept over, and its size grows
-   combinatorially with state dimension — from 78K entries in four dimensions
-   to 42M once steering angle, lateral velocity and yaw rate are added. When
-   the vehicle leaves the tabulated regime — halving its mass mid-run, for
-   instance — the table-driven controller deviates by 3.9 m, while the
-   differentiable controller, which re-solves the control at every step, stays
-   within 0.3 m. Nominal driving therefore runs on the fast table; off-nominal
-   conditions fall back to differentiable re-solving.
+Our approach does not replay controls; it re-derives them. A reference
+trajectory is expressed in system-independent kinematic terms — curvature and
+acceleration along the path — and then converted into the steering and throttle
+that the *target* dynamic system needs in order to realize it. We call this
+**Path2ST**.
 
 <figure>
-	<img src="/assets/images/projects/phys_sweep_vs_diff.jpg">
-  <figcaption>Differentiable inverse control (left) against the offline sweep table with run-time inverse look-up (right), without (top) and with (bottom) PD feedback. Numbers are mean / maximum cross-track and speed error. The table is ~5,300× cheaper per step at comparable accuracy.</figcaption>
+	<img src="/assets/images/projects/phys_path2st_transfer.jpg">
+  <figcaption>Cross-system transfer. A trajectory observed in a source system (left) is reproduced in the target engine two ways: by replaying the source controls open-loop (middle), and by converting the path through Path2ST into controls appropriate to the target dynamics (right). Open-loop replay accumulates error because the two systems do not share a dynamics model.</figcaption>
 </figure>
-
-<figure class="half">
-	<img src="/assets/images/projects/phys_offnominal.jpg">
-  <figcaption>Off-nominal robustness: with the vehicle mass halved mid-run — a state the sweep table never covered — the tabulated controller leaves the path (3.9 m maximum deviation) while the differentiable controller re-solves each step and holds it (0.3 m).</figcaption>
-</figure>
-
-3. **A Four-Stage Control Stack**: Physics-consistent trajectory generation
-   feeds a nominal tracking controller (behavior-cloned steering with
-   PID/feed-forward speed control), which is corrected by a residual
-   reinforcement-learning head and finally constrained by a deterministic
-   safety shield. The residual is deliberately *gated* — scaled by a risk
-   estimate and by lateral acceleration — so it stays inert while the nominal
-   controller is performing well, and intervenes only in out-of-distribution
-   regimes. It corrects steering and applies braking; throttle is left to the
-   nominal controller, which already tracks speed to 0.049 m/s.
 
 <figure>
-	<img src="/assets/images/projects/phys_control_stack.jpg">
-  <figcaption>The four-stage stack: physics-consistent path generation, nominal tracking, gated residual correction, and a deterministic safety shield.</figcaption>
+	<img src="/assets/images/projects/phys_path2st_mapping.jpg">
+  <figcaption>The conversion itself: curvature and longitudinal acceleration sampled along the reference path are mapped to the steering and throttle that the target vehicle model requires at that instant.</figcaption>
 </figure>
-
-4. **Safety as Structure, Not as Reward**: Across 660 safety-critical crossing
-   scenarios, a residual RL policy alone tracks well (0.061 m) but fails 58.5%
-   of the time; a rule-only shield is far safer but destroys tracking (5.96 m,
-   10.0% failure). Composing them — a learned residual constrained by a
-   deterministic STOP/PASS shield — gives 1.5% failure at 0.090 m tracking
-   error, and the remaining failures are all physically unavoidable. Collision
-   penalties in the reward were not sufficient to induce sustained yielding;
-   the constraint has to be imposed structurally rather than learned.
-
-<figure>
-	<img src="/assets/images/projects/phys_safety_4arm.jpg">
-  <figcaption>Ablation over the same crossing scenario. Learning supplies tracking and the rule supplies safety: neither alone is sufficient, and only their composition (B′) both follows the path and yields.</figcaption>
-</figure>
-
-5. **Off-Nominal Recovery by Planning**: When a disturbance — a spin, a lateral
-   impact, an adverse spawn pose — throws the vehicle off its reference path,
-   we generate a feasible recovery path rather than learning a recovery policy.
-   Frenet-quintic and Dubins candidates are filtered by steering-limit and
-   braking-distance feasibility, ranked by path length, merge distance,
-   curvature load, steering effort and speed loss, and merged back into the
-   original path. Compared with a learned recovery policy this leaves the
-   nominal stack untouched, remains inspectable when it fails, and is corrected
-   by editing rules instead of retraining.
-
-6. **Terrain Diversity for Generalization**: Training the residual policy over
-   99 paths spread across multiple 3 km × 3 km terrains transfers to unseen
-   environments better than long-horizon training on a single 500 m terrain
-   (8.89 cm against 10.41 cm cross-track error on the held-out environment),
-   and reaches it in roughly a third of the wall-clock time. Environment
-   diversity, not episode length, is what buys generalization here.
-
-7. **Planner Integration (in progress)**: We are connecting a
-   vision-language-action planner as the trajectory proposer, with our nominal
-   controller executing the proposed trajectory and the safety shield
-   constraining it — the planner proposes, the controller tracks, and the
-   shield enforces what must hold.
 
 <figure>
 	<video autoplay loop muted playsinline style="width:100%;">
 		<source src="/assets/images/projects/sim2sim.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 	</video>
-  <figcaption>Sim2Sim calibration: an observed trajectory is converted into the steering and throttle commands that reproduce it under a different physics engine, which is the same mechanism used to align the simulator to real-world rollouts.</figcaption>
+  <figcaption>The same alignment running continuously: an observed trajectory is turned into the control sequence that reproduces it under a different physics engine.</figcaption>
 </figure>
+
+## How the conversion is made fast and precise
+
+The conversion has to run inside the control loop, which rules out solving it
+the expensive way. Differentiable inverse control — back-propagating through
+the simulator to find the control that produces the desired next state — is
+accurate but costs about **299 ms per step**.
+
+Instead we sweep the vehicle's drive-train offline into a lookup table over
+speed and throttle against acceleration, invert that table at run time, and
+close the loop with a **PD steering correction**. Building the table takes 14
+seconds, once. Control then costs **0.056 ms per step — roughly 5,300× less** —
+and tracks at least as well: 0.044 m mean cross-track error against 0.078 m,
+with a maximum of 0.100 m. **High-speed, precise control is what this
+combination buys**, and it is what makes the aligned simulator usable in a
+closed loop rather than only offline.
+
+<figure>
+	<img src="/assets/images/projects/phys_sweep_vs_diff.jpg">
+  <figcaption>Differentiable inverse control (left) against the offline sweep table with run-time inverse look-up (right), without (top) and with (bottom) PD feedback. Numbers are mean / maximum cross-track and speed error.</figcaption>
+</figure>
+
+**Differentiable physics is kept for where precise simulation is actually
+required** — offline system identification, and states the table never covered.
+A lookup table only spans the region it was swept over, and grows
+combinatorially with state dimension: 78K entries in four dimensions, 42M once
+steering angle, lateral velocity and yaw rate are added. Halve the vehicle's
+mass mid-run and the tabulated controller leaves the path by 3.9 m, while the
+differentiable controller — re-solving the control at every step — holds it
+within 0.3 m. The two are complements rather than competitors: the table
+drives, and the differentiable solver identifies and rescues.
+
+<figure class="half">
+	<img src="/assets/images/projects/phys_offnominal.jpg">
+  <figcaption>Off-nominal robustness with the vehicle mass halved mid-run — a state the sweep table never covered.</figcaption>
+</figure>
+
+## Building a control system inside the aligned world
+
+Once the simulator's dynamics are aligned to the target system, it becomes a
+place where a full control stack can be developed and evaluated rather than
+merely animated. That stack is the second half of this project:
+
+1. **Physics-consistent path generation** — reference trajectories the vehicle
+   model can actually execute, with their optimal control pairs extracted
+   through the sweep table and PD controller.
+2. **Nominal tracking (Path2ST)** — behavior-cloned steering with PID and
+   feed-forward speed control, following the reference in real time.
+3. **Residual reinforcement learning** — a gated correction that stays inert
+   while the nominal controller performs well, and compensates steering error
+   only in out-of-distribution regimes such as hard braking or sharp turns.
+4. **Deterministic safety shield** — a STOP/PASS constraint imposed on the
+   policy's output when a crossing conflict is predicted.
+
+<figure>
+	<img src="/assets/images/projects/phys_control_stack.jpg">
+  <figcaption>The four-stage stack: physics-consistent path generation, nominal tracking, gated residual correction, and a deterministic safety shield.</figcaption>
+</figure>
+
+The division of labour between the learned and the imposed parts is deliberate,
+and measurable. Across 660 safety-critical crossing scenarios, a residual
+policy alone tracks well (0.061 m) but fails 58.5% of the time; a rule-only
+shield is safe but destroys tracking (5.96 m, 10.0% failure). Composed, they
+give 1.5% failure at 0.090 m tracking error, and the remaining failures are
+physically unavoidable. Collision penalties in the reward were not sufficient
+to induce sustained yielding — the constraint has to be structural rather than
+learned.
+
+<figure>
+	<img src="/assets/images/projects/phys_safety_4arm.jpg">
+  <figcaption>Ablation over the same crossing scenario. Learning supplies tracking and the rule supplies safety; only their composition achieves both.</figcaption>
+</figure>
+
+Two further results shape how the stack is trained and recovered. Off-nominal
+recovery is handled by **planning rather than by a learned policy** —
+Frenet-quintic and Dubins candidates filtered by steering and braking
+feasibility, ranked by path length, merge distance, steering effort and speed
+loss, then merged back into the reference — which leaves the nominal stack
+untouched and stays inspectable when it fails. And generalization comes from
+**environment diversity rather than episode length**: training across 99 paths
+on multiple 3 km × 3 km terrains transfers to unseen environments better than
+long-horizon training on a single 500 m terrain (8.89 cm against 10.41 cm
+cross-track error), in about a third of the wall-clock time.
+
+## Where this is going — integration with a VLA planner
+
+The direction of the project is to bring all of this under a
+**vision-language-action (VLA) planner**. The planner proposes a trajectory
+from camera observations, ego history and navigation intent; Path2ST converts
+that trajectory into controls the vehicle model can execute; the safety shield
+constrains what the policy is allowed to do when a crossing conflict is
+predicted; and the loop re-plans on each new observation.
+
+The separation of responsibilities is the point. **The planner proposes, the
+controller tracks, and the shield enforces what must hold** — so that a large
+learned model can supply intent and semantics without being trusted with the
+guarantees, which stay in explicit, verifiable components. Dynamics alignment
+is what makes that division safe to rely on: the controller and the shield
+reason about a physics that has been calibrated against the real system rather
+than an approximation of it.
 
 {% capture programming %}
 #### programming experience
