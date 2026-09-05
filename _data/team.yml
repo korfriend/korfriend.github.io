@@ -185,7 +185,8 @@ team_members:
   - name: Mankyo Jung (Undergraduate Researcher)
     bio: I focus on terrain-aware inverse dynamics calibration between Blender and
       Genesis simulators, exploring 3D terrain generalization for sim-to-sim
-      transfer.
+      transfer, and I am starting to work on turning reconstructed scenes into
+      physics-ready assets and digital twins.
     keywords:
       - label: Trajectory-to-Controls (ST, B)
         url: /Projects/real2sim-sim2real/
@@ -193,6 +194,8 @@ team_members:
         url: /Projects/real2sim-sim2real/
       - label: 3D Terrain Generalization
         url: /Projects/real2sim-sim2real/
+      - label: Physics-Ready Assets & Twins
+        url: /Projects/physics-ready-twin/
     avatar: /assets/images/people/Jeong_Man-gyo.jpg
     links:
       - label: Email
