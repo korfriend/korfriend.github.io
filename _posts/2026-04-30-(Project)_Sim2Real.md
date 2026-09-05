@@ -40,14 +40,6 @@ that the *target* dynamic system needs in order to realize it. We call this
   <figcaption>The conversion itself: curvature and longitudinal acceleration sampled along the reference path are mapped to the steering and throttle that the target vehicle model requires at that instant.</figcaption>
 </figure>
 
-<figure>
-	<video autoplay loop muted playsinline style="width:100%;">
-		<source src="/assets/images/projects/sim2sim.mp4" type="video/mp4">
-		Your browser does not support the video tag.
-	</video>
-  <figcaption>The same alignment running continuously: an observed trajectory is turned into the control sequence that reproduces it under a different physics engine.</figcaption>
-</figure>
-
 ## How the conversion is made fast and precise
 
 The conversion has to run inside the control loop, which rules out solving it
@@ -78,11 +70,6 @@ mass mid-run and the tabulated controller leaves the path by 3.9 m, while the
 differentiable controller — re-solving the control at every step — holds it
 within 0.3 m. The two are complements rather than competitors: the table
 drives, and the differentiable solver identifies and rescues.
-
-<figure class="half">
-	<img src="/assets/images/projects/phys_offnominal.jpg">
-  <figcaption>Off-nominal robustness with the vehicle mass halved mid-run — a state the sweep table never covered.</figcaption>
-</figure>
 
 ## Building a control system inside the aligned world
 
@@ -139,6 +126,11 @@ from camera observations, ego history and navigation intent; Path2ST converts
 that trajectory into controls the vehicle model can execute; the safety shield
 constrains what the policy is allowed to do when a crossing conflict is
 predicted; and the loop re-plans on each new observation.
+
+<figure>
+	<img src="/assets/images/projects/phys_vla_pipeline.svg">
+  <figcaption>The planned end-to-end integration. Sensing and navigation intent go to the VLA planner, which emits a future trajectory on every new observation; Path2ST converts that trajectory into steering and throttle for the vehicle model; and the deterministic safety shield overrides the result with a STOP or PASS decision when a crossing conflict is predicted. The vehicle's new state becomes the next observation, and the planner re-plans.</figcaption>
+</figure>
 
 The separation of responsibilities is the point. **The planner proposes, the
 controller tracks, and the shield enforces what must hold** — so that a large

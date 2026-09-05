@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 236" width="1240" height="236" role="img" aria-label="End-to-end integration: a VLA planner proposes a trajectory, the Path2ST controller converts it into steering and throttle, and a deterministic safety shield constrains the result before it reaches the vehicle.">
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7b8aa0"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f6fd0"/>
+    </marker>
+    <marker id="at" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1e9e7e"/>
+    </marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e08a2e"/>
+    </marker>
+  </defs>
+
+  <style>
+    .ttl { font: 700 13px system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #33415c; letter-spacing: .08em; }
+    .bx  { font: 700 12.5px system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .bs  { font: 400 11px system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .cap { font: 400 10.5px system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .loop{ font: 700 11px system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #5c6b82; letter-spacing: .04em; }
+  </style>
+
+  <text class="ttl" x="20" y="22">END-TO-END INTEGRATION</text>
+
+  <!-- 1 sensing -->
+  <rect x="40" y="46" width="150" height="74" rx="9" fill="#eef2f7" stroke="#c3cedd"/>
+  <text class="bs" x="115" y="79" text-anchor="middle" fill="#33415c">Camera · ego history</text>
+  <text class="bs" x="115" y="95" text-anchor="middle" fill="#33415c">· navigation</text>
+
+  <!-- 2 planner -->
+  <rect x="214" y="46" width="165" height="74" rx="9" fill="#e8f0fe" stroke="#2f6fd0" stroke-width="1.6"/>
+  <text class="bx" x="296" y="79" text-anchor="middle" fill="#1c4f9c">VLA PLANNER</text>
+  <text class="bs" x="296" y="96" text-anchor="middle" fill="#2f6fd0">Alpamayo</text>
+  <text class="cap" x="296" y="139" text-anchor="middle" fill="#5c6b82">generates a future trajectory</text>
+  <text class="cap" x="296" y="152" text-anchor="middle" fill="#5c6b82">on every new observation</text>
+
+  <!-- 3 trajectory -->
+  <rect x="403" y="46" width="135" height="74" rx="9" fill="#eef4fb" stroke="#bcd4ee"/>
+  <text class="bx" x="470" y="87" text-anchor="middle" fill="#2b5c94">TRAJECTORY</text>
+
+  <!-- 4 controller -->
+  <rect x="562" y="46" width="155" height="74" rx="9" fill="#e6f5f0" stroke="#1e9e7e" stroke-width="1.6"/>
+  <text class="bx" x="639" y="79" text-anchor="middle" fill="#0f7a60">Path2ST</text>
+  <text class="bx" x="639" y="96" text-anchor="middle" fill="#0f7a60">CONTROLLER</text>
+  <text class="cap" x="639" y="139" text-anchor="middle" fill="#5c6b82">converts the trajectory into</text>
+  <text class="cap" x="639" y="152" text-anchor="middle" fill="#5c6b82">actual vehicle control</text>
+
+  <!-- 5 actuation -->
+  <rect x="741" y="46" width="135" height="74" rx="9" fill="#edf7f3" stroke="#b6ddcf"/>
+  <text class="bx" x="808" y="79" text-anchor="middle" fill="#2c7a63">STEER /</text>
+  <text class="bx" x="808" y="96" text-anchor="middle" fill="#2c7a63">THROTTLE</text>
+
+  <!-- 6 shield -->
+  <rect x="900" y="46" width="165" height="74" rx="9" fill="#fdf0e2" stroke="#e08a2e" stroke-width="1.6"/>
+  <text class="bx" x="982" y="72" text-anchor="middle" fill="#b7681a">SAFETY SHIELD</text>
+  <text class="bs" x="982" y="88" text-anchor="middle" fill="#c07a25">crossing override</text>
+  <text class="bx" x="982" y="105" text-anchor="middle" fill="#b7681a">STOP / PASS</text>
+  <text class="cap" x="982" y="139" text-anchor="middle" fill="#5c6b82">enforces the crossing-vehicle</text>
+  <text class="cap" x="982" y="152" text-anchor="middle" fill="#5c6b82">safety constraint</text>
+
+  <!-- 7 vehicle -->
+  <rect x="1089" y="46" width="120" height="74" rx="9" fill="#f2f4f7" stroke="#b9c2cf"/>
+  <text class="bx" x="1149" y="79" text-anchor="middle" fill="#33415c">VEHICLE</text>
+  <text class="bs" x="1149" y="96" text-anchor="middle" fill="#5c6b82">new scene</text>
+
+  <!-- arrows -->
+  <line x1="192" y1="83" x2="210" y2="83" stroke="#7b8aa0" stroke-width="2" marker-end="url(#ag)"/>
+  <line x1="381" y1="83" x2="399" y2="83" stroke="#2f6fd0" stroke-width="2" marker-end="url(#ab)"/>
+  <line x1="540" y1="83" x2="558" y2="83" stroke="#2f6fd0" stroke-width="2" marker-end="url(#ab)"/>
+  <line x1="719" y1="83" x2="737" y2="83" stroke="#1e9e7e" stroke-width="2" marker-end="url(#at)"/>
+  <line x1="878" y1="83" x2="896" y2="83" stroke="#1e9e7e" stroke-width="2" marker-end="url(#at)"/>
+  <line x1="1067" y1="83" x2="1085" y2="83" stroke="#e08a2e" stroke-width="2" marker-end="url(#ao)"/>
+
+  <!-- feedback loop -->
+  <path d="M 1149 122 L 1149 200 L 20 200 L 20 83 L 36 83"
+        fill="none" stroke="#7b8aa0" stroke-width="2" marker-end="url(#ag)"/>
+  <rect x="500" y="188" width="230" height="24" fill="#ffffff"/>
+  <text class="loop" x="615" y="205" text-anchor="middle">new observation → re-plan</text>
+</svg>
