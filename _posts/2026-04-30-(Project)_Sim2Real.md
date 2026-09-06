@@ -110,7 +110,7 @@ merely animated. That stack is the second half of this project:
    policy's output when a crossing conflict is predicted.
 
 <figure>
-	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.1em 1.2em;margin-bottom:.7em;">
+	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9312; SimPath &middot; path generation</div>
 			<img src="/assets/images/simpath.gif" loading="lazy" style="width:100%;display:block;" alt="Generation of a physics-consistent reference path.">
