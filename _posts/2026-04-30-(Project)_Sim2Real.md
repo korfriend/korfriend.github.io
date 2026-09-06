@@ -31,12 +31,12 @@ that the *target* dynamic system needs in order to realize it. We call this
 **Path2ST**.
 
 <figure>
-	<video src="/assets/images/blender_genesis_st.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;" aria-label="Three synchronized top-down views: a reference run in Blender, the same controls replayed open-loop in Genesis drifting off the reference, and the Path2ST-converted controls tracking it."></video>
+	<video src="/assets/images/blender_genesis_st.mp4" autoplay loop muted playsinline preload="metadata" style="flex:0 0 100%;width:100%;display:block;" aria-label="Three synchronized top-down views: a reference run in Blender, the same controls replayed open-loop in Genesis drifting off the reference, and the Path2ST-converted controls tracking it."></video>
   <figcaption>Cross-system transfer. A trajectory recorded in the source system (left, Blender) is reproduced in the target engine two ways. Replaying the source steering and throttle open-loop (middle) drifts steadily away from the reference — the two engines do not share a dynamics model, so identical inputs do not produce identical motion. Converting the path through Path2ST into controls appropriate to the target dynamics (right) keeps the vehicle on the reference throughout the manoeuvre.</figcaption>
 </figure>
 
 <figure>
-	<video src="/assets/images/blender_genesis_st2.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;" aria-label="A reference path with curvature and acceleration readouts on the left, mapped through Path2ST to steering and throttle values driving the target vehicle on the right."></video>
+	<video src="/assets/images/blender_genesis_st2.mp4" autoplay loop muted playsinline preload="metadata" style="flex:0 0 100%;width:100%;display:block;" aria-label="A reference path with curvature and acceleration readouts on the left, mapped through Path2ST to steering and throttle values driving the target vehicle on the right."></video>
   <figcaption>The conversion itself, running along the path: curvature and longitudinal acceleration sampled at each point of the reference (left) are mapped to the steering and throttle the target vehicle model requires at that instant (right).</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ combination buys**, and it is what makes the aligned simulator usable in a
 closed loop rather than only offline.
 
 <figure>
-	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
+	<div style="flex:0 0 100%;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1.2em 1.3em;margin-bottom:.7em;">
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Differentiable inverse control · feed-forward only</div>
 			<video src="/assets/images/diff_only.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Differentiable inverse control tracking the reference path without PD feedback."></video>
@@ -110,7 +110,7 @@ merely animated. That stack is the second half of this project:
    policy's output when a crossing conflict is predicted.
 
 <figure>
-	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
+	<div style="flex:0 0 100%;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1.2em 1.3em;margin-bottom:.7em;">
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9312; SimPath &middot; path generation</div>
 			<video src="/assets/images/simpath.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Generation of a physics-consistent reference path."></video>
@@ -141,7 +141,7 @@ to induce sustained yielding — the constraint has to be structural rather than
 learned.
 
 <figure>
-	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
+	<div style="flex:0 0 100%;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1.2em 1.3em;margin-bottom:.7em;">
 		<div>
 			<div style="position:relative;line-height:0;">
 				<video src="/assets/images/safety_shield_RL.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Residual RL alone at the crossing conflict, ending in a collision."></video>
