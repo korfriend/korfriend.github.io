@@ -7,3 +7,17 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   Site overrides — keep additions here so theme partials stay upgradeable
+   ========================================================================== */
+
+/* Header images (`header.image` in front matter) render as a full-bleed hero
+   by default, which overpowers the article on project pages. Constrain them
+   to roughly the text measure so they read as a lead figure instead.
+   Only affects the plain image hero; `.page__hero--overlay` is untouched. */
+.page__hero {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -57,8 +57,29 @@ combination buys**, and it is what makes the aligned simulator usable in a
 closed loop rather than only offline.
 
 <figure>
-	<img src="/assets/images/projects/phys_sweep_vs_diff.jpg">
-  <figcaption>Differentiable inverse control (left) against the offline sweep table with run-time inverse look-up (right), without (top) and with (bottom) PD feedback. Numbers are mean / maximum cross-track and speed error.</figcaption>
+	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Differentiable inverse control · feed-forward only</div>
+			<img src="/assets/images/diff_only.gif" loading="lazy" style="width:100%;display:block;" alt="Differentiable inverse control tracking the reference path without PD feedback.">
+			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.402 / 0.833 m &middot; speed 0.682 / 1.744 m/s</div>
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Sweep table + inverse look-up · feed-forward only</div>
+			<img src="/assets/images/table_only.gif" loading="lazy" style="width:100%;display:block;" alt="Sweep-table inverse look-up tracking the reference path without PD feedback.">
+			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.623 / 2.780 m &middot; speed 0.592 / 1.127 m/s</div>
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Differentiable inverse control · with PD feedback</div>
+			<img src="/assets/images/diff_pd.gif" loading="lazy" style="width:100%;display:block;" alt="Differentiable inverse control tracking the reference path with PD feedback.">
+			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.044 / 0.100 m &middot; speed 0.711 / 1.908 m/s</div>
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Sweep table + inverse look-up · with PD feedback</div>
+			<img src="/assets/images/table_pd.gif" loading="lazy" style="width:100%;display:block;" alt="Sweep-table inverse look-up tracking the reference path with PD feedback.">
+			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.078 / 0.244 m &middot; speed 0.186 / 1.124 m/s</div>
+		</div>
+	</div>
+  <figcaption>Differentiable inverse control (left) against the offline sweep table with run-time inverse look-up (right), without (top) and with (bottom) PD feedback. Figures under each panel are mean / maximum cross-track and speed error over the run.</figcaption>
 </figure>
 
 **Differentiable physics is kept for where precise simulation is actually
@@ -89,7 +110,24 @@ merely animated. That stack is the second half of this project:
    policy's output when a crossing conflict is predicted.
 
 <figure>
-	<img src="/assets/images/projects/phys_control_stack.jpg">
+	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.1em 1.2em;margin-bottom:.7em;">
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9312; SimPath &middot; path generation</div>
+			<img src="/assets/images/simpath.gif" loading="lazy" style="width:100%;display:block;" alt="Generation of a physics-consistent reference path.">
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9313; Path2ST &middot; nominal tracking</div>
+			<img src="/assets/images/path2st.gif" loading="lazy" style="width:100%;display:block;" alt="Nominal controller tracking the reference path in real time.">
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9314; Residual RL &middot; error compensation</div>
+			<img src="/assets/images/path2st_rl.gif" loading="lazy" style="width:100%;display:block;" alt="Gated residual reinforcement-learning correction on top of the nominal controller.">
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9315; Safety shield &middot; STOP / PASS</div>
+			<img src="/assets/images/safty_shield_ov.gif" loading="lazy" style="width:100%;display:block;" alt="Deterministic safety shield overriding the policy with a STOP or PASS decision at a crossing conflict.">
+		</div>
+	</div>
   <figcaption>The four-stage stack: physics-consistent path generation, nominal tracking, gated residual correction, and a deterministic safety shield.</figcaption>
 </figure>
 
