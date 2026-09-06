@@ -31,12 +31,12 @@ that the *target* dynamic system needs in order to realize it. We call this
 **Path2ST**.
 
 <figure>
-	<img src="/assets/images/blender_genesis_st.gif" loading="lazy" alt="Three synchronized top-down views: a reference run in Blender, the same controls replayed open-loop in Genesis drifting off the reference, and the Path2ST-converted controls tracking it.">
+	<video src="/assets/images/blender_genesis_st.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;" aria-label="Three synchronized top-down views: a reference run in Blender, the same controls replayed open-loop in Genesis drifting off the reference, and the Path2ST-converted controls tracking it."></video>
   <figcaption>Cross-system transfer. A trajectory recorded in the source system (left, Blender) is reproduced in the target engine two ways. Replaying the source steering and throttle open-loop (middle) drifts steadily away from the reference — the two engines do not share a dynamics model, so identical inputs do not produce identical motion. Converting the path through Path2ST into controls appropriate to the target dynamics (right) keeps the vehicle on the reference throughout the manoeuvre.</figcaption>
 </figure>
 
 <figure>
-	<img src="/assets/images/blender_genesis_st2.gif" loading="lazy" alt="A reference path with curvature and acceleration readouts on the left, mapped through Path2ST to steering and throttle values driving the target vehicle on the right.">
+	<video src="/assets/images/blender_genesis_st2.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;" aria-label="A reference path with curvature and acceleration readouts on the left, mapped through Path2ST to steering and throttle values driving the target vehicle on the right."></video>
   <figcaption>The conversion itself, running along the path: curvature and longitudinal acceleration sampled at each point of the reference (left) are mapped to the steering and throttle the target vehicle model requires at that instant (right).</figcaption>
 </figure>
 
@@ -60,22 +60,22 @@ closed loop rather than only offline.
 	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Differentiable inverse control · feed-forward only</div>
-			<img src="/assets/images/diff_only.gif" loading="lazy" style="width:100%;display:block;" alt="Differentiable inverse control tracking the reference path without PD feedback.">
+			<video src="/assets/images/diff_only.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Differentiable inverse control tracking the reference path without PD feedback."></video>
 			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.402 / 0.833 m &middot; speed 0.682 / 1.744 m/s</div>
 		</div>
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Sweep table + inverse look-up · feed-forward only</div>
-			<img src="/assets/images/table_only.gif" loading="lazy" style="width:100%;display:block;" alt="Sweep-table inverse look-up tracking the reference path without PD feedback.">
+			<video src="/assets/images/table_only.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Sweep-table inverse look-up tracking the reference path without PD feedback."></video>
 			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.623 / 2.780 m &middot; speed 0.592 / 1.127 m/s</div>
 		</div>
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Differentiable inverse control · with PD feedback</div>
-			<img src="/assets/images/diff_pd.gif" loading="lazy" style="width:100%;display:block;" alt="Differentiable inverse control tracking the reference path with PD feedback.">
+			<video src="/assets/images/diff_pd.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Differentiable inverse control tracking the reference path with PD feedback."></video>
 			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.044 / 0.100 m &middot; speed 0.711 / 1.908 m/s</div>
 		</div>
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Sweep table + inverse look-up · with PD feedback</div>
-			<img src="/assets/images/table_pd.gif" loading="lazy" style="width:100%;display:block;" alt="Sweep-table inverse look-up tracking the reference path with PD feedback.">
+			<video src="/assets/images/table_pd.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Sweep-table inverse look-up tracking the reference path with PD feedback."></video>
 			<div style="font-size:.75em;opacity:.72;margin-top:.3em;">cross-track 0.078 / 0.244 m &middot; speed 0.186 / 1.124 m/s</div>
 		</div>
 	</div>
@@ -113,19 +113,19 @@ merely animated. That stack is the second half of this project:
 	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9312; SimPath &middot; path generation</div>
-			<img src="/assets/images/simpath.gif" loading="lazy" style="width:100%;display:block;" alt="Generation of a physics-consistent reference path.">
+			<video src="/assets/images/simpath.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Generation of a physics-consistent reference path."></video>
 		</div>
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9313; Path2ST &middot; nominal tracking</div>
-			<img src="/assets/images/path2st.gif" loading="lazy" style="width:100%;display:block;" alt="Nominal controller tracking the reference path in real time.">
+			<video src="/assets/images/path2st.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Nominal controller tracking the reference path in real time."></video>
 		</div>
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9314; Residual RL &middot; error compensation</div>
-			<img src="/assets/images/path2st_rl.gif" loading="lazy" style="width:100%;display:block;" alt="Gated residual reinforcement-learning correction on top of the nominal controller.">
+			<video src="/assets/images/path2st_rl.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Gated residual reinforcement-learning correction on top of the nominal controller."></video>
 		</div>
 		<div>
 			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">&#9315; Safety shield &middot; STOP / PASS</div>
-			<img src="/assets/images/safty_shield_ov.gif" loading="lazy" style="width:100%;display:block;" alt="Deterministic safety shield overriding the policy with a STOP or PASS decision at a crossing conflict.">
+			<video src="/assets/images/safty_shield_ov.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Deterministic safety shield overriding the policy with a STOP or PASS decision at a crossing conflict."></video>
 		</div>
 	</div>
   <figcaption>The four-stage stack: physics-consistent path generation, nominal tracking, gated residual correction, and a deterministic safety shield.</figcaption>
@@ -141,8 +141,41 @@ to induce sustained yielding — the constraint has to be structural rather than
 learned.
 
 <figure>
-	<img src="/assets/images/projects/phys_safety_4arm.jpg">
-  <figcaption>Ablation over the same crossing scenario. Learning supplies tracking and the rule supplies safety; only their composition achieves both.</figcaption>
+	<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2em 1.3em;margin-bottom:.7em;">
+		<div>
+			<div style="position:relative;line-height:0;">
+				<video src="/assets/images/safety_shield_RL.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Residual RL alone at the crossing conflict, ending in a collision."></video>
+				<span style="position:absolute;top:8px;right:8px;background:rgba(15,22,36,.8);color:#fff;font:700 .74em/1.35 inherit;padding:3px 8px;border-radius:3px;">A &middot; RL only</span>
+				<span style="position:absolute;left:8px;bottom:8px;background:#c0392b;color:#fff;font:700 .74em/1.35 inherit;letter-spacing:.04em;padding:3px 9px;border-radius:3px;">COLLISION</span>
+			</div>
+			<div style="font-size:.75em;opacity:.72;margin-top:.32em;">cross-track 0.061 m &middot; failure 58.5 % (386 / 660)</div>
+		</div>
+		<div>
+			<div style="position:relative;line-height:0;">
+				<video src="/assets/images/safety_shield_RL_rule.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Residual RL under the deterministic safety shield, yielding and then passing without collision."></video>
+				<span style="position:absolute;top:8px;right:8px;background:rgba(15,22,36,.8);color:#fff;font:700 .74em/1.35 inherit;padding:3px 8px;border-radius:3px;">B&prime; &middot; RL + Rule</span>
+				<span style="position:absolute;left:8px;bottom:8px;background:#1e8449;color:#fff;font:700 .74em/1.35 inherit;letter-spacing:.04em;padding:3px 9px;border-radius:3px;">SAFE</span>
+			</div>
+			<div style="font-size:.75em;opacity:.72;margin-top:.32em;">cross-track 0.090 m &middot; failure 1.5 % (10 / 660)</div>
+		</div>
+		<div>
+			<div style="position:relative;line-height:0;">
+				<video src="/assets/images/safety_shield_rule.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="The rule-only shield without a learned residual, losing the path and colliding."></video>
+				<span style="position:absolute;top:8px;right:8px;background:rgba(15,22,36,.8);color:#fff;font:700 .74em/1.35 inherit;padding:3px 8px;border-radius:3px;">C &middot; Rule only</span>
+				<span style="position:absolute;left:8px;bottom:8px;background:#c0392b;color:#fff;font:700 .74em/1.35 inherit;letter-spacing:.04em;padding:3px 9px;border-radius:3px;">COLLISION</span>
+			</div>
+			<div style="font-size:.75em;opacity:.72;margin-top:.32em;">cross-track 5.961 m &middot; failure 10.0 % (66 / 660)</div>
+		</div>
+		<div>
+			<div style="position:relative;line-height:0;">
+				<video src="/assets/images/safety_shield_baseline.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="The nominal controller alone with neither residual nor shield, colliding at the crossing."></video>
+				<span style="position:absolute;top:8px;right:8px;background:rgba(15,22,36,.8);color:#fff;font:700 .74em/1.35 inherit;padding:3px 8px;border-radius:3px;">D &middot; Baseline only</span>
+				<span style="position:absolute;left:8px;bottom:8px;background:#c0392b;color:#fff;font:700 .74em/1.35 inherit;letter-spacing:.04em;padding:3px 9px;border-radius:3px;">COLLISION</span>
+			</div>
+			<div style="font-size:.75em;opacity:.72;margin-top:.32em;">cross-track 4.546 m &middot; failure 83.5 % (551 / 660)</div>
+		</div>
+	</div>
+  <figcaption>Ablation over the same crossing scenario &mdash; same scene, same camera, same playback speed. Learning supplies tracking and the rule supplies safety; only their composition (B&prime;) achieves both. Figures under each panel are mean cross-track error and failure rate over 660 safety-critical scenarios.</figcaption>
 </figure>
 
 Two further results shape how the stack is trained and recovered. Off-nominal
