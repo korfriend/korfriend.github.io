@@ -31,13 +31,13 @@ that the *target* dynamic system needs in order to realize it. We call this
 **Path2ST**.
 
 <figure>
-	<img src="/assets/images/blender_genesis_st.gif">
-  <figcaption>Cross-system transfer. A trajectory recorded in the source system (left, Blender) is reproduced in the target engine two ways: by replaying the source steering and throttle open-loop (middle), and by converting the path through Path2ST into controls appropriate to the target dynamics (right). Open-loop replay accumulates error because the two systems do not share a dynamics model.</figcaption>
+	<img src="/assets/images/blender_genesis_st.gif" loading="lazy" alt="Three synchronized top-down views: a reference run in Blender, the same controls replayed open-loop in Genesis drifting off the reference, and the Path2ST-converted controls tracking it.">
+  <figcaption>Cross-system transfer. A trajectory recorded in the source system (left, Blender) is reproduced in the target engine two ways. Replaying the source steering and throttle open-loop (middle) drifts steadily away from the reference — the two engines do not share a dynamics model, so identical inputs do not produce identical motion. Converting the path through Path2ST into controls appropriate to the target dynamics (right) keeps the vehicle on the reference throughout the manoeuvre.</figcaption>
 </figure>
 
 <figure>
-	<img src="/assets/images/blender_genesis_st2.gif">
-  <figcaption>The conversion itself: curvature and longitudinal acceleration sampled along the reference path are mapped to the steering and throttle the target vehicle model requires at that instant.</figcaption>
+	<img src="/assets/images/blender_genesis_st2.gif" loading="lazy" alt="A reference path with curvature and acceleration readouts on the left, mapped through Path2ST to steering and throttle values driving the target vehicle on the right.">
+  <figcaption>The conversion itself, running along the path: curvature and longitudinal acceleration sampled at each point of the reference (left) are mapped to the steering and throttle the target vehicle model requires at that instant (right).</figcaption>
 </figure>
 
 ## How the conversion is made fast and precise
