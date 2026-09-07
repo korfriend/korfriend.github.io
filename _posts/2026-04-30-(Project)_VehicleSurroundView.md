@@ -30,13 +30,23 @@ structure behind it, the composite can only ever be shown from the one virtual
 viewpoint the homography was built for.
 
 <figure>
-	<img src="/assets/images/projects/gs_ipm_vs_gs.jpg">
-  <figcaption>The same parked scene under inverse-perspective mapping (left) and 3D Gaussian Splatting reconstruction (right). Planar re-projection collapses the neighbouring vehicle into a smear on the ground; the reconstructed map preserves its height and outline.</figcaption>
+	<div style="flex:0 0 100%;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1.2em 1.3em;margin-bottom:.7em;">
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">Inverse-perspective mapping</div>
+			<video src="/assets/images/ipm_reproj.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="Top view of a parking manoeuvre produced by re-projecting the fisheye images onto the ground plane; neighbouring vehicles are smeared flat along the viewing direction."></video>
+		</div>
+		<div>
+			<div style="font-weight:700;font-size:.82em;margin-bottom:.32em;">3D Gaussian Splatting reconstruction</div>
+			<video src="/assets/images/gs_svm.mp4" autoplay loop muted playsinline preload="metadata" style="width:100%;display:block;" aria-label="The same manoeuvre rendered from the reconstructed Gaussian map, where the neighbouring vehicles keep their height and outline."></video>
+		</div>
+	</div>
+  <figcaption>The same parking manoeuvre under inverse-perspective mapping (left) and 3D Gaussian Splatting reconstruction (right). Planar re-projection collapses the neighbouring vehicles into smears on the ground and holds a single fixed viewpoint; the reconstructed map preserves their height and outline and can be rendered from anywhere.</figcaption>
 </figure>
 
-An explicit 3D map removes that assumption. The question we work on is whether
-such a map can be produced **fast enough to be used while driving**, from a
-camera rig that is wide-angle, low-overlap and rigidly fixed to a moving body.
+An explicit 3D map removes that assumption. The question we work on is **how
+good such a map can be made while it is still being built during the drive**,
+from a camera rig that is wide-angle, low-overlap and rigidly fixed to a moving
+body.
 
 ### Approach
 
@@ -85,19 +95,27 @@ work is pursued on its own rather than as part of this pipeline.
 
 ### Where the work stands
 
-On synthetic underground-parking scenes rendered with a full vehicle rig, an
-**offline** reconstruction of the same data gives us an upper bound on what the
-representation can express, and free-viewpoint top views rendered directly from
-the Gaussian map already show the height information that IPM discards. The
-incremental, streaming version does not yet reach that bound: closing the quality
-gap between per-frame updates and full offline optimisation — by deciding *where*
-a limited budget of new Gaussians should be spent, in particular near the seams
-between adjacent cameras — is the open problem we are currently working on, along
-with bringing the per-frame latency down to the camera frame rate.
+On synthetic underground-parking sequences rendered from a full vehicle rig, the
+pipeline already runs at **interactive time**: the map is updated as frames
+arrive and can be rendered from a free viewpoint while the manoeuvre is still in
+progress, and those free-viewpoint top views already carry the height
+information that IPM discards. An **offline** reconstruction of the same data
+serves as the ceiling — what these Gaussians can express when the whole sequence
+is optimised at once, with no per-frame budget at all.
+
+**Raising quality at interactive time is the current work.** We treat the update
+rate as a fixed constraint rather than something to trade away: the question is
+how much of the offline quality can be recovered while the map keeps updating
+during the drive. In practice that comes down to two decisions made every frame
+— where a limited budget of new Gaussians should be spent, and how much of the
+existing map can be corrected before the update stops keeping pace with the
+cameras. The streaming result thins out first at the seams between adjacent
+fisheye views and on surfaces that only become visible late in the manoeuvre,
+which is where that budget currently goes.
 
 <figure>
-	<img src="/assets/images/projects/gs_topview_strip.jpg">
-  <figcaption>Top view of the same scene, left to right: ground truth, inverse-perspective mapping, offline 3D Gaussian Splatting, and on-the-fly incremental 3D Gaussian Splatting. The offline column is the quality ceiling for the representation; the incremental column is the streaming result, and the difference between the two is what the current work targets.</figcaption>
+	<video src="/assets/images/svm_comparison.mp4" autoplay loop muted playsinline preload="metadata" style="flex:0 0 100%;width:100%;display:block;" aria-label="Four synchronized top views of the same parking manoeuvre: ground truth, inverse-perspective mapping, offline 3D Gaussian Splatting, and on-the-fly incremental 3D Gaussian Splatting."></video>
+  <figcaption>Top view of the same manoeuvre, left to right: ground truth, inverse-perspective mapping, offline 3D Gaussian Splatting, and on-the-fly incremental 3D Gaussian Splatting. The offline column is the quality ceiling for the representation; the incremental column is what the map looks like while it is still being built, and the distance between the two is what the current work is closing.</figcaption>
 </figure>
 
 {% capture programming %}
