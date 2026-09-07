@@ -75,11 +75,11 @@ team_members:
       fragment-level gradient accumulation in overlapped gaussian scenarios.
     keywords:
       - label: 3D Gaussian Splatting (Medium Model)
-        url: /Projects/gaussian-splatting/
+        url: /docs/project/
       - label: Medium Reformulation
-        url: /Projects/gaussian-splatting/
+        url: /docs/project/
       - label: Fragment-level Gradient
-        url: /Projects/gaussian-splatting/
+        url: /docs/project/
     avatar: /assets/images/people/Jinsu.jpg
     links:
       - label: Email
@@ -260,16 +260,17 @@ team_members:
         icon: fab fa-fw fa-instagram
         url: null
   - name: Kyowon Lee (Undergraduate Researcher)
-    bio: I work on rig-constrained on-the-fly 3D Gaussian Splatting for real-time
-      novel view synthesis with multi-camera systems, specializing in
-      rotation-only rig optimization and incremental pose estimation.
+    bio: I work on on-the-fly 3D Gaussian Splatting for vehicle surround view,
+      reconstructing the scene around a car from a rigidly mounted four-fisheye
+      rig while it is driving, with a focus on fisheye-native reconstruction and
+      rig-constrained body pose estimation.
     keywords:
-      - label: High-speed 3D Gaussian Splatting
-        url: /Projects/gaussian-splatting/
+      - label: Vehicle Surround View
+        url: /Projects/vehicle-surround-view/
       - label: On-the-fly Novel View Synthesis
-        url: /Projects/gaussian-splatting/
+        url: /Projects/vehicle-surround-view/
       - label: Rig-constrained Reconstruction
-        url: /Projects/gaussian-splatting/
+        url: /Projects/vehicle-surround-view/
     avatar: /assets/images/people/Lee_Kyo-won.jpg
     links:
       - label: Email
