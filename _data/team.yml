@@ -43,6 +43,8 @@ team_members:
         url: /Projects/dental-inverse-graphics/
       - label: Multi-view Texture Optimization
         url: /Projects/dental-inverse-graphics/
+      - label: Sketch-based Hair Editing
+        url: /Projects/hair-style-dit/
     avatar: /assets/images/people/sohyun.jpg
     links:
       - label: Email
